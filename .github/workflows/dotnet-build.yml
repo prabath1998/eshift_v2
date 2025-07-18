@@ -1,0 +1,46 @@
+﻿name: .NET Desktop App CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        dotnet-version: [ '8.0.x' ]
+
+    steps:
+      - name: 🛎️ Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 🧰 Setup .NET ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+
+      - name: 🔍 Restore NuGet Packages
+        run: dotnet restore
+
+      - name: 🛠️ Build Solution
+        run: dotnet build --no-restore --configuration Release
+
+      - name: 📦 Collect Build Artifacts
+        if: success()
+        run: |
+          mkdir -p output
+          find . -type f -path "*/bin/Release/*.exe" -exec cp {} output/ \;
+        shell: bash
+
+      - name: 📤 Upload Artifacts to GitHub
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eShift-Desktop-Build
+          path: output
