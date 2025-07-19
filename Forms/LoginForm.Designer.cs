@@ -282,7 +282,7 @@
             // lblNoAccount
             // 
             lblNoAccount.AutoSize = true;
-            lblNoAccount.Location = new Point(88, 528);
+            lblNoAccount.Location = new Point(54, 528);
             lblNoAccount.Name = "lblNoAccount";
             lblNoAccount.Size = new Size(163, 20);
             lblNoAccount.TabIndex = 9;

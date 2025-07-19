@@ -78,7 +78,7 @@
             pnlSidebar.Dock = DockStyle.Left;
             pnlSidebar.Location = new Point(0, 0);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(260, 680);
+            pnlSidebar.Size = new Size(311, 853);
             pnlSidebar.TabIndex = 0;
             // 
             // pnlReports
@@ -89,7 +89,7 @@
             pnlReports.Cursor = Cursors.Hand;
             pnlReports.Location = new Point(20, 420);
             pnlReports.Name = "pnlReports";
-            pnlReports.Size = new Size(220, 45);
+            pnlReports.Size = new Size(260, 45);
             pnlReports.TabIndex = 6;
             // 
             // imgHelp
@@ -121,7 +121,7 @@
             pnlProduct.Cursor = Cursors.Hand;
             pnlProduct.Location = new Point(20, 360);
             pnlProduct.Name = "pnlProduct";
-            pnlProduct.Size = new Size(220, 45);
+            pnlProduct.Size = new Size(260, 45);
             pnlProduct.TabIndex = 5;
             // 
             // imgPromote
@@ -153,7 +153,7 @@
             pnlVehicle.Cursor = Cursors.Hand;
             pnlVehicle.Location = new Point(20, 300);
             pnlVehicle.Name = "pnlVehicle";
-            pnlVehicle.Size = new Size(220, 45);
+            pnlVehicle.Size = new Size(260, 45);
             pnlVehicle.TabIndex = 4;
             // 
             // imgIncome
@@ -185,7 +185,7 @@
             pnlJobs.Cursor = Cursors.Hand;
             pnlJobs.Location = new Point(20, 240);
             pnlJobs.Name = "pnlJobs";
-            pnlJobs.Size = new Size(220, 45);
+            pnlJobs.Size = new Size(260, 45);
             pnlJobs.TabIndex = 3;
             // 
             // imgCustomers
@@ -217,7 +217,7 @@
             pnlCustomer.Cursor = Cursors.Hand;
             pnlCustomer.Location = new Point(20, 180);
             pnlCustomer.Name = "pnlCustomer";
-            pnlCustomer.Size = new Size(220, 45);
+            pnlCustomer.Size = new Size(260, 45);
             pnlCustomer.TabIndex = 2;
             // 
             // imgProduct
@@ -249,7 +249,7 @@
             pnlDashboard.Cursor = Cursors.Hand;
             pnlDashboard.Location = new Point(20, 120);
             pnlDashboard.Name = "pnlDashboard";
-            pnlDashboard.Size = new Size(220, 45);
+            pnlDashboard.Size = new Size(260, 45);
             pnlDashboard.TabIndex = 1;
             // 
             // imgDashboard
@@ -281,9 +281,9 @@
             pnlUser.Controls.Add(btnLogout);
             pnlUser.Controls.Add(lblUserName);
             pnlUser.Controls.Add(picUserAvatar);
-            pnlUser.Location = new Point(20, 600);
+            pnlUser.Location = new Point(20, 773);
             pnlUser.Name = "pnlUser";
-            pnlUser.Size = new Size(220, 60);
+            pnlUser.Size = new Size(253, 60);
             pnlUser.TabIndex = 0;
             // 
             // btnLogout
@@ -327,7 +327,7 @@
             pnlHeader.Dock = DockStyle.Top;
             pnlHeader.Location = new Point(0, 0);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(260, 80);
+            pnlHeader.Size = new Size(311, 80);
             pnlHeader.TabIndex = 0;
             // 
             // lblAppName
@@ -355,22 +355,22 @@
             // 
             pnlMainContent.BackColor = Color.FromArgb(247, 248, 255);
             pnlMainContent.Dock = DockStyle.Fill;
-            pnlMainContent.Location = new Point(260, 0);
+            pnlMainContent.Location = new Point(311, 0);
             pnlMainContent.Name = "pnlMainContent";
-            pnlMainContent.Size = new Size(924, 680);
+            pnlMainContent.Size = new Size(1271, 853);
             pnlMainContent.TabIndex = 1;
             // 
             // AdminDashboardForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 680);
+            ClientSize = new Size(1582, 853);
             Controls.Add(pnlMainContent);
             Controls.Add(pnlSidebar);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MinimumSize = new Size(1200, 719);
+            MinimumSize = new Size(1600, 800);
             Name = "AdminDashboardForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "E-Shift - Admin Dashboard";

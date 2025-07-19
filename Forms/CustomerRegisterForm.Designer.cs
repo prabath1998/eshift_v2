@@ -397,11 +397,12 @@ namespace eShift_Logistics_System.Forms
             // lblNoAccount
             // 
             lblNoAccount.AutoSize = true;
-            lblNoAccount.Location = new Point(110, 645);
+            lblNoAccount.Location = new Point(54, 645);
             lblNoAccount.Name = "lblNoAccount";
             lblNoAccount.Size = new Size(178, 20);
             lblNoAccount.TabIndex = 9;
             lblNoAccount.Text = "Already have an account?";
+            lblNoAccount.Click += lblNoAccount_Click;
             // 
             // lnkRegister
             // 

@@ -133,5 +133,10 @@ namespace eShift_Logistics_System.Forms
         {
 
         }
+
+        private void lblNoAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
