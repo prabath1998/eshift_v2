@@ -16,8 +16,8 @@ namespace eShift_Logistics_System.Helpers
         /// <summary>
         /// SMTP configuration for sending emails.
         /// </summary>
-        private static readonly string emailAddress = "8b78dd58987492"; 
-        private static readonly string emailPassword = "4e176a6f5d26dd";
+        private static readonly string emailAddress = "a3748c7f61b26f"; 
+        private static readonly string emailPassword = "f6b67a1e719146";
         private static readonly string smtpHost = "smtp.mailtrap.io"; 
         private static readonly int smtpPort = 587;
 
