@@ -34,84 +34,89 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            lblTitle.Location = new Point(25, 20);
+            lblTitle.Location = new Point(29, 27);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(189, 30);
+            lblTitle.Size = new Size(244, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Add New Product";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 83);
+            label1.Location = new Point(31, 111);
             label1.Name = "label1";
-            label1.Size = new Size(84, 15);
+            label1.Size = new Size(104, 20);
             label1.TabIndex = 1;
             label1.Text = "Product Name";
             // 
             // txtName
             // 
-            txtName.Location = new Point(160, 80);
+            txtName.Location = new Point(183, 107);
+            txtName.Margin = new Padding(3, 4, 3, 4);
             txtName.MaxLength = 256;
             txtName.Name = "txtName";
-            txtName.Size = new Size(230, 23);
+            txtName.Size = new Size(262, 27);
             txtName.TabIndex = 0;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(27, 118);
+            label2.Location = new Point(31, 157);
             label2.Name = "label2";
-            label2.Size = new Size(110, 15);
+            label2.Size = new Size(139, 20);
             label2.TabIndex = 3;
             label2.Text = "Default Weight (kg)";
             // 
             // numWeight
             // 
             numWeight.DecimalPlaces = 2;
-            numWeight.Location = new Point(160, 116);
+            numWeight.Location = new Point(183, 155);
+            numWeight.Margin = new Padding(3, 4, 3, 4);
             numWeight.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             numWeight.Name = "numWeight";
-            numWeight.Size = new Size(230, 23);
+            numWeight.Size = new Size(263, 27);
             numWeight.TabIndex = 1;
             // 
             // txtDimensions
             // 
-            txtDimensions.Location = new Point(160, 150);
+            txtDimensions.Location = new Point(183, 200);
+            txtDimensions.Margin = new Padding(3, 4, 3, 4);
             txtDimensions.MaxLength = 256;
             txtDimensions.Name = "txtDimensions";
-            txtDimensions.Size = new Size(230, 23);
+            txtDimensions.Size = new Size(262, 27);
             txtDimensions.TabIndex = 2;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(27, 153);
+            label3.Location = new Point(31, 204);
             label3.Name = "label3";
-            label3.Size = new Size(110, 15);
+            label3.Size = new Size(139, 20);
             label3.TabIndex = 5;
             label3.Text = "Default Dimensions";
             // 
             // chkIsFragile
             // 
             chkIsFragile.AutoSize = true;
-            chkIsFragile.Location = new Point(160, 188);
+            chkIsFragile.Location = new Point(183, 251);
+            chkIsFragile.Margin = new Padding(3, 4, 3, 4);
             chkIsFragile.Name = "chkIsFragile";
-            chkIsFragile.Size = new Size(72, 19);
+            chkIsFragile.Size = new Size(90, 24);
             chkIsFragile.TabIndex = 3;
             chkIsFragile.Text = "Is Fragile";
             chkIsFragile.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
-            btnSave.BackColor = Color.FromArgb(65, 84, 241);
+            btnSave.BackColor = Color.IndianRed;
             btnSave.FlatAppearance.BorderSize = 0;
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(270, 230);
+            btnSave.Location = new Point(309, 307);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(120, 40);
+            btnSave.Size = new Size(137, 53);
             btnSave.TabIndex = 4;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = false;
@@ -123,9 +128,10 @@
             btnCancel.DialogResult = DialogResult.Cancel;
             btnCancel.FlatAppearance.BorderSize = 0;
             btnCancel.FlatStyle = FlatStyle.Flat;
-            btnCancel.Location = new Point(160, 230);
+            btnCancel.Location = new Point(183, 307);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(104, 40);
+            btnCancel.Size = new Size(119, 53);
             btnCancel.TabIndex = 5;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = false;
@@ -133,11 +139,11 @@
             // AddEditProductForm
             // 
             AcceptButton = btnSave;
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             CancelButton = btnCancel;
-            ClientSize = new Size(424, 291);
+            ClientSize = new Size(485, 388);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Controls.Add(chkIsFragile);
@@ -150,6 +156,7 @@
             Controls.Add(lblTitle);
             Font = new Font("Segoe UI", 9F);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "AddEditProductForm";

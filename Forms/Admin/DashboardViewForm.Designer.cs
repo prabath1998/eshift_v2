@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardViewForm));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             pnlActiveCustomers = new Panel();
             lblActiveCustomersValue = new Label();
             lblActiveCustomersTitle = new Label();
@@ -94,10 +94,10 @@
             // 
             lblActiveCustomersValue.AutoSize = true;
             lblActiveCustomersValue.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblActiveCustomersValue.ForeColor = Color.FromArgb(65, 84, 241);
+            lblActiveCustomersValue.ForeColor = Color.IndianRed;
             lblActiveCustomersValue.Location = new Point(70, 55);
             lblActiveCustomersValue.Name = "lblActiveCustomersValue";
-            lblActiveCustomersValue.Size = new Size(42, 32);
+            lblActiveCustomersValue.Size = new Size(52, 41);
             lblActiveCustomersValue.TabIndex = 2;
             lblActiveCustomersValue.Text = "73";
             // 
@@ -108,7 +108,7 @@
             lblActiveCustomersTitle.ForeColor = Color.Gray;
             lblActiveCustomersTitle.Location = new Point(70, 30);
             lblActiveCustomersTitle.Name = "lblActiveCustomersTitle";
-            lblActiveCustomersTitle.Size = new Size(108, 17);
+            lblActiveCustomersTitle.Size = new Size(142, 23);
             lblActiveCustomersTitle.TabIndex = 1;
             lblActiveCustomersTitle.Text = "Active Customers";
             // 
@@ -138,10 +138,10 @@
             // 
             lblCompletedJobsValue.AutoSize = true;
             lblCompletedJobsValue.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblCompletedJobsValue.ForeColor = Color.FromArgb(65, 84, 241);
+            lblCompletedJobsValue.ForeColor = Color.IndianRed;
             lblCompletedJobsValue.Location = new Point(70, 55);
             lblCompletedJobsValue.Name = "lblCompletedJobsValue";
-            lblCompletedJobsValue.Size = new Size(56, 32);
+            lblCompletedJobsValue.Size = new Size(69, 41);
             lblCompletedJobsValue.TabIndex = 2;
             lblCompletedJobsValue.Text = "124";
             // 
@@ -152,7 +152,7 @@
             lblCompletedJobsTitle.ForeColor = Color.Gray;
             lblCompletedJobsTitle.Location = new Point(70, 30);
             lblCompletedJobsTitle.Name = "lblCompletedJobsTitle";
-            lblCompletedJobsTitle.Size = new Size(103, 17);
+            lblCompletedJobsTitle.Size = new Size(132, 23);
             lblCompletedJobsTitle.TabIndex = 1;
             lblCompletedJobsTitle.Text = "Completed Jobs";
             // 
@@ -182,10 +182,10 @@
             // 
             lblPendingJobsValue.AutoSize = true;
             lblPendingJobsValue.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblPendingJobsValue.ForeColor = Color.FromArgb(65, 84, 241);
+            lblPendingJobsValue.ForeColor = Color.IndianRed;
             lblPendingJobsValue.Location = new Point(70, 55);
             lblPendingJobsValue.Name = "lblPendingJobsValue";
-            lblPendingJobsValue.Size = new Size(28, 32);
+            lblPendingJobsValue.Size = new Size(35, 41);
             lblPendingJobsValue.TabIndex = 2;
             lblPendingJobsValue.Text = "8";
             // 
@@ -196,7 +196,7 @@
             lblPendingJobsTitle.ForeColor = Color.Gray;
             lblPendingJobsTitle.Location = new Point(70, 30);
             lblPendingJobsTitle.Name = "lblPendingJobsTitle";
-            lblPendingJobsTitle.Size = new Size(86, 17);
+            lblPendingJobsTitle.Size = new Size(110, 23);
             lblPendingJobsTitle.TabIndex = 1;
             lblPendingJobsTitle.Text = "Pending Jobs";
             // 
@@ -226,10 +226,10 @@
             // 
             lblTotalJobsValue.AutoSize = true;
             lblTotalJobsValue.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTotalJobsValue.ForeColor = Color.FromArgb(65, 84, 241);
+            lblTotalJobsValue.ForeColor = Color.IndianRed;
             lblTotalJobsValue.Location = new Point(70, 55);
             lblTotalJobsValue.Name = "lblTotalJobsValue";
-            lblTotalJobsValue.Size = new Size(56, 32);
+            lblTotalJobsValue.Size = new Size(69, 41);
             lblTotalJobsValue.TabIndex = 2;
             lblTotalJobsValue.Text = "132";
             // 
@@ -240,7 +240,7 @@
             lblTotalJobsTitle.ForeColor = Color.Gray;
             lblTotalJobsTitle.Location = new Point(70, 30);
             lblTotalJobsTitle.Name = "lblTotalJobsTitle";
-            lblTotalJobsTitle.Size = new Size(67, 17);
+            lblTotalJobsTitle.Size = new Size(84, 23);
             lblTotalJobsTitle.TabIndex = 1;
             lblTotalJobsTitle.Text = "Total Jobs";
             // 
@@ -287,23 +287,24 @@
             dgvRecentJobs.BackgroundColor = Color.White;
             dgvRecentJobs.BorderStyle = BorderStyle.None;
             dgvRecentJobs.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvRecentJobs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvRecentJobs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvRecentJobs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvRecentJobs.Dock = DockStyle.Fill;
             dgvRecentJobs.EnableHeadersVisualStyles = false;
-            dgvRecentJobs.Location = new Point(10, 28);
+            dgvRecentJobs.Location = new Point(10, 32);
             dgvRecentJobs.Name = "dgvRecentJobs";
             dgvRecentJobs.ReadOnly = true;
             dgvRecentJobs.RowHeadersVisible = false;
+            dgvRecentJobs.RowHeadersWidth = 51;
             dgvRecentJobs.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvRecentJobs.Size = new Size(441, 250);
+            dgvRecentJobs.Size = new Size(441, 246);
             dgvRecentJobs.TabIndex = 0;
             // 
             // grpLoadAssignments
@@ -327,23 +328,24 @@
             dgvLoadAssignments.BackgroundColor = Color.White;
             dgvLoadAssignments.BorderStyle = BorderStyle.None;
             dgvLoadAssignments.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.White;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvLoadAssignments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvLoadAssignments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgvLoadAssignments.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvLoadAssignments.Dock = DockStyle.Fill;
             dgvLoadAssignments.EnableHeadersVisualStyles = false;
-            dgvLoadAssignments.Location = new Point(10, 28);
+            dgvLoadAssignments.Location = new Point(10, 32);
             dgvLoadAssignments.Name = "dgvLoadAssignments";
             dgvLoadAssignments.ReadOnly = true;
             dgvLoadAssignments.RowHeadersVisible = false;
+            dgvLoadAssignments.RowHeadersWidth = 51;
             dgvLoadAssignments.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLoadAssignments.Size = new Size(435, 100);
+            dgvLoadAssignments.Size = new Size(435, 96);
             dgvLoadAssignments.TabIndex = 0;
             // 
             // grpShortcuts
@@ -362,7 +364,7 @@
             // btnAddJob
             // 
             btnAddJob.Anchor = AnchorStyles.None;
-            btnAddJob.BackColor = Color.FromArgb(65, 84, 241);
+            btnAddJob.BackColor = Color.IndianRed;
             btnAddJob.FlatAppearance.BorderSize = 0;
             btnAddJob.FlatStyle = FlatStyle.Flat;
             btnAddJob.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -380,7 +382,7 @@
             // btnCreateUnit
             // 
             btnCreateUnit.Anchor = AnchorStyles.None;
-            btnCreateUnit.BackColor = Color.FromArgb(65, 84, 241);
+            btnCreateUnit.BackColor = Color.IndianRed;
             btnCreateUnit.FlatAppearance.BorderSize = 0;
             btnCreateUnit.FlatStyle = FlatStyle.Flat;
             btnCreateUnit.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -464,7 +466,7 @@
             // 
             // DashboardViewForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 248, 255);
             ClientSize = new Size(1000, 550);

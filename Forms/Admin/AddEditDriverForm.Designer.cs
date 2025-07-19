@@ -17,187 +17,196 @@
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtLicenseNumber = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cboStatus = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.chkIsActive = new System.Windows.Forms.CheckBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            label1 = new Label();
+            txtName = new TextBox();
+            txtLicenseNumber = new TextBox();
+            label3 = new Label();
+            txtPhone = new TextBox();
+            label4 = new Label();
+            txtAddress = new TextBox();
+            label6 = new Label();
+            cboStatus = new ComboBox();
+            label5 = new Label();
+            chkIsActive = new CheckBox();
+            btnSave = new Button();
+            btnCancel = new Button();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(25, 20);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(175, 30);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Add New Driver";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
+            lblTitle.Location = new Point(29, 27);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(222, 37);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Add New Driver";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Full Name";
+            label1.AutoSize = true;
+            label1.Location = new Point(31, 111);
+            label1.Name = "label1";
+            label1.Size = new Size(76, 20);
+            label1.TabIndex = 1;
+            label1.Text = "Full Name";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(140, 80);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(230, 23);
-            this.txtName.TabIndex = 0;
+            txtName.Location = new Point(160, 107);
+            txtName.Margin = new Padding(3, 4, 3, 4);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(262, 27);
+            txtName.TabIndex = 0;
             // 
             // txtLicenseNumber
             // 
-            this.txtLicenseNumber.Location = new System.Drawing.Point(140, 115);
-            this.txtLicenseNumber.Name = "txtLicenseNumber";
-            this.txtLicenseNumber.Size = new System.Drawing.Size(230, 23);
-            this.txtLicenseNumber.TabIndex = 1;
+            txtLicenseNumber.Location = new Point(160, 153);
+            txtLicenseNumber.Margin = new Padding(3, 4, 3, 4);
+            txtLicenseNumber.Name = "txtLicenseNumber";
+            txtLicenseNumber.Size = new Size(262, 27);
+            txtLicenseNumber.TabIndex = 1;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "License Number";
+            label3.AutoSize = true;
+            label3.Location = new Point(31, 157);
+            label3.Name = "label3";
+            label3.Size = new Size(115, 20);
+            label3.TabIndex = 5;
+            label3.Text = "License Number";
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(140, 150);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(230, 23);
-            this.txtPhone.TabIndex = 2;
+            txtPhone.Location = new Point(160, 200);
+            txtPhone.Margin = new Padding(3, 4, 3, 4);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(262, 27);
+            txtPhone.TabIndex = 2;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Phone";
+            label4.AutoSize = true;
+            label4.Location = new Point(31, 204);
+            label4.Name = "label4";
+            label4.Size = new Size(50, 20);
+            label4.TabIndex = 7;
+            label4.Text = "Phone";
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(140, 185);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(230, 60);
-            this.txtAddress.TabIndex = 3;
+            txtAddress.Location = new Point(160, 247);
+            txtAddress.Margin = new Padding(3, 4, 3, 4);
+            txtAddress.Multiline = true;
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(262, 79);
+            txtAddress.TabIndex = 3;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 188);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 15);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Address";
+            label6.AutoSize = true;
+            label6.Location = new Point(31, 251);
+            label6.Name = "label6";
+            label6.Size = new Size(62, 20);
+            label6.TabIndex = 9;
+            label6.Text = "Address";
             // 
             // cboStatus
             // 
-            this.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboStatus.FormattingEnabled = true;
-            this.cboStatus.Location = new System.Drawing.Point(140, 256);
-            this.cboStatus.Name = "cboStatus";
-            this.cboStatus.Size = new System.Drawing.Size(230, 23);
-            this.cboStatus.TabIndex = 4;
+            cboStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboStatus.FormattingEnabled = true;
+            cboStatus.Location = new Point(160, 341);
+            cboStatus.Margin = new Padding(3, 4, 3, 4);
+            cboStatus.Name = "cboStatus";
+            cboStatus.Size = new Size(262, 28);
+            cboStatus.TabIndex = 4;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 259);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 15);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Status";
+            label5.AutoSize = true;
+            label5.Location = new Point(31, 345);
+            label5.Name = "label5";
+            label5.Size = new Size(49, 20);
+            label5.TabIndex = 11;
+            label5.Text = "Status";
             // 
             // chkIsActive
             // 
-            this.chkIsActive.AutoSize = true;
-            this.chkIsActive.Checked = true;
-            this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkIsActive.Location = new System.Drawing.Point(140, 294);
-            this.chkIsActive.Name = "chkIsActive";
-            this.chkIsActive.Size = new System.Drawing.Size(68, 19);
-            this.chkIsActive.TabIndex = 5;
-            this.chkIsActive.Text = "Is Active";
-            this.chkIsActive.UseVisualStyleBackColor = true;
+            chkIsActive.AutoSize = true;
+            chkIsActive.Checked = true;
+            chkIsActive.CheckState = CheckState.Checked;
+            chkIsActive.Location = new Point(160, 392);
+            chkIsActive.Margin = new Padding(3, 4, 3, 4);
+            chkIsActive.Name = "chkIsActive";
+            chkIsActive.Size = new Size(86, 24);
+            chkIsActive.TabIndex = 5;
+            chkIsActive.Text = "Is Active";
+            chkIsActive.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(84)))), ((int)(((byte)(241)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(250, 337);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 40);
-            this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            btnSave.BackColor = Color.IndianRed;
+            btnSave.FlatAppearance.BorderSize = 0;
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            btnSave.ForeColor = Color.White;
+            btnSave.Location = new Point(286, 449);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(137, 53);
+            btnSave.TabIndex = 6;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(140, 337);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(104, 40);
-            this.btnCancel.TabIndex = 7;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.Gainsboro;
+            btnCancel.DialogResult = DialogResult.Cancel;
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Location = new Point(160, 449);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(119, 53);
+            btnCancel.TabIndex = 7;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = false;
             // 
             // AddEditDriverForm
             // 
-            this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(404, 399);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.chkIsActive);
-            this.Controls.Add(this.cboStatus);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtLicenseNumber);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "AddEditDriverForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Driver Details";
-            this.Load += new System.EventHandler(this.AddEditDriverForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnSave;
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            CancelButton = btnCancel;
+            ClientSize = new Size(462, 532);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
+            Controls.Add(chkIsActive);
+            Controls.Add(cboStatus);
+            Controls.Add(label5);
+            Controls.Add(txtAddress);
+            Controls.Add(label6);
+            Controls.Add(txtPhone);
+            Controls.Add(label4);
+            Controls.Add(txtLicenseNumber);
+            Controls.Add(label3);
+            Controls.Add(txtName);
+            Controls.Add(label1);
+            Controls.Add(lblTitle);
+            Font = new Font("Segoe UI", 9F);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "AddEditDriverForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Driver Details";
+            Load += AddEditDriverForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -103,7 +103,7 @@
             // 
             lblAppName.AutoSize = true;
             lblAppName.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblAppName.ForeColor = Color.FromArgb(65, 84, 241);
+            lblAppName.ForeColor = Color.IndianRed;
             lblAppName.Location = new Point(40, 52);
             lblAppName.Name = "lblAppName";
             lblAppName.Size = new Size(275, 41);
@@ -265,7 +265,7 @@
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.FromArgb(65, 84, 241);
+            btnLogin.BackColor = Color.IndianRed;
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
@@ -275,7 +275,7 @@
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(320, 63);
             btnLogin.TabIndex = 8;
-            btnLogin.Text = "Login";
+            btnLogin.Text = "Sign In";
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 

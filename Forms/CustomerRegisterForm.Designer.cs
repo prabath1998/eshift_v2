@@ -111,7 +111,7 @@ namespace eShift_Logistics_System.Forms
             // 
             lblAppName.AutoSize = true;
             lblAppName.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblAppName.ForeColor = Color.FromArgb(65, 84, 241);
+            lblAppName.ForeColor = Color.IndianRed;
             lblAppName.Location = new Point(40, 49);
             lblAppName.Name = "lblAppName";
             lblAppName.Size = new Size(275, 41);
@@ -380,7 +380,7 @@ namespace eShift_Logistics_System.Forms
             // 
             // btnRegister
             // 
-            btnRegister.BackColor = Color.FromArgb(65, 84, 241);
+            btnRegister.BackColor = Color.IndianRed;
             btnRegister.FlatAppearance.BorderSize = 0;
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
@@ -390,7 +390,7 @@ namespace eShift_Logistics_System.Forms
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(320, 63);
             btnRegister.TabIndex = 8;
-            btnRegister.Text = "Create Account";
+            btnRegister.Text = "Sign Up";
             btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
             // 

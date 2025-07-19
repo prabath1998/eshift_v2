@@ -17,172 +17,180 @@
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cboTruck = new System.Windows.Forms.ComboBox();
-            this.cboDriver = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cboAssistant = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cboStatus = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.chkIsActive = new System.Windows.Forms.CheckBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            label2 = new Label();
+            cboTruck = new ComboBox();
+            cboDriver = new ComboBox();
+            label3 = new Label();
+            cboAssistant = new ComboBox();
+            label4 = new Label();
+            cboStatus = new ComboBox();
+            label5 = new Label();
+            chkIsActive = new CheckBox();
+            btnSave = new Button();
+            btnCancel = new Button();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(25, 20);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(233, 30);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Add New Transport Unit";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
+            lblTitle.Location = new Point(29, 27);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(329, 37);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Add New Transport Unit";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Select Truck";
+            label2.AutoSize = true;
+            label2.Location = new Point(31, 111);
+            label2.Name = "label2";
+            label2.Size = new Size(87, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Select Truck";
             // 
             // cboTruck
             // 
-            this.cboTruck.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTruck.FormattingEnabled = true;
-            this.cboTruck.Location = new System.Drawing.Point(140, 80);
-            this.cboTruck.Name = "cboTruck";
-            this.cboTruck.Size = new System.Drawing.Size(230, 23);
-            this.cboTruck.TabIndex = 1;
+            cboTruck.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboTruck.FormattingEnabled = true;
+            cboTruck.Location = new Point(160, 107);
+            cboTruck.Margin = new Padding(3, 4, 3, 4);
+            cboTruck.Name = "cboTruck";
+            cboTruck.Size = new Size(262, 28);
+            cboTruck.TabIndex = 1;
             // 
             // cboDriver
             // 
-            this.cboDriver.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDriver.FormattingEnabled = true;
-            this.cboDriver.Location = new System.Drawing.Point(140, 115);
-            this.cboDriver.Name = "cboDriver";
-            this.cboDriver.Size = new System.Drawing.Size(230, 23);
-            this.cboDriver.TabIndex = 2;
+            cboDriver.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboDriver.FormattingEnabled = true;
+            cboDriver.Location = new Point(160, 153);
+            cboDriver.Margin = new Padding(3, 4, 3, 4);
+            cboDriver.Name = "cboDriver";
+            cboDriver.Size = new Size(262, 28);
+            cboDriver.TabIndex = 2;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Select Driver";
+            label3.AutoSize = true;
+            label3.Location = new Point(31, 157);
+            label3.Name = "label3";
+            label3.Size = new Size(93, 20);
+            label3.TabIndex = 5;
+            label3.Text = "Select Driver";
             // 
             // cboAssistant
             // 
-            this.cboAssistant.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboAssistant.FormattingEnabled = true;
-            this.cboAssistant.Location = new System.Drawing.Point(140, 150);
-            this.cboAssistant.Name = "cboAssistant";
-            this.cboAssistant.Size = new System.Drawing.Size(230, 23);
-            this.cboAssistant.TabIndex = 3;
+            cboAssistant.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboAssistant.FormattingEnabled = true;
+            cboAssistant.Location = new Point(160, 200);
+            cboAssistant.Margin = new Padding(3, 4, 3, 4);
+            cboAssistant.Name = "cboAssistant";
+            cboAssistant.Size = new Size(262, 28);
+            cboAssistant.TabIndex = 3;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Select Assistant";
+            label4.AutoSize = true;
+            label4.Location = new Point(31, 204);
+            label4.Name = "label4";
+            label4.Size = new Size(111, 20);
+            label4.TabIndex = 7;
+            label4.Text = "Select Assistant";
             // 
             // cboStatus
             // 
-            this.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboStatus.FormattingEnabled = true;
-            this.cboStatus.Location = new System.Drawing.Point(140, 185);
-            this.cboStatus.Name = "cboStatus";
-            this.cboStatus.Size = new System.Drawing.Size(230, 23);
-            this.cboStatus.TabIndex = 4;
+            cboStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboStatus.FormattingEnabled = true;
+            cboStatus.Location = new Point(160, 247);
+            cboStatus.Margin = new Padding(3, 4, 3, 4);
+            cboStatus.Name = "cboStatus";
+            cboStatus.Size = new Size(262, 28);
+            cboStatus.TabIndex = 4;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 188);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 15);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Status";
+            label5.AutoSize = true;
+            label5.Location = new Point(31, 251);
+            label5.Name = "label5";
+            label5.Size = new Size(49, 20);
+            label5.TabIndex = 11;
+            label5.Text = "Status";
             // 
             // chkIsActive
             // 
-            this.chkIsActive.AutoSize = true;
-            this.chkIsActive.Checked = true;
-            this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkIsActive.Location = new System.Drawing.Point(140, 223);
-            this.chkIsActive.Name = "chkIsActive";
-            this.chkIsActive.Size = new System.Drawing.Size(68, 19);
-            this.chkIsActive.TabIndex = 5;
-            this.chkIsActive.Text = "Is Active";
-            this.chkIsActive.UseVisualStyleBackColor = true;
+            chkIsActive.AutoSize = true;
+            chkIsActive.Checked = true;
+            chkIsActive.CheckState = CheckState.Checked;
+            chkIsActive.Location = new Point(160, 297);
+            chkIsActive.Margin = new Padding(3, 4, 3, 4);
+            chkIsActive.Name = "chkIsActive";
+            chkIsActive.Size = new Size(86, 24);
+            chkIsActive.TabIndex = 5;
+            chkIsActive.Text = "Is Active";
+            chkIsActive.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(84)))), ((int)(((byte)(241)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(250, 265);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 40);
-            this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            btnSave.BackColor = Color.IndianRed;
+            btnSave.FlatAppearance.BorderSize = 0;
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            btnSave.ForeColor = Color.White;
+            btnSave.Location = new Point(286, 353);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(137, 53);
+            btnSave.TabIndex = 6;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(140, 265);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(104, 40);
-            this.btnCancel.TabIndex = 7;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.Gainsboro;
+            btnCancel.DialogResult = DialogResult.Cancel;
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Location = new Point(160, 353);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(119, 53);
+            btnCancel.TabIndex = 7;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = false;
             // 
             // AddEditTransportUnitForm
             // 
-            this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(404, 326);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.chkIsActive);
-            this.Controls.Add(this.cboStatus);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.cboAssistant);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.cboDriver);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cboTruck);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "AddEditTransportUnitForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Transport Unit Details";
-            this.Load += new System.EventHandler(this.AddEditUnitForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnSave;
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            CancelButton = btnCancel;
+            ClientSize = new Size(462, 435);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
+            Controls.Add(chkIsActive);
+            Controls.Add(cboStatus);
+            Controls.Add(label5);
+            Controls.Add(cboAssistant);
+            Controls.Add(label4);
+            Controls.Add(cboDriver);
+            Controls.Add(label3);
+            Controls.Add(cboTruck);
+            Controls.Add(label2);
+            Controls.Add(lblTitle);
+            Font = new Font("Segoe UI", 9F);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "AddEditTransportUnitForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Transport Unit Details";
+            Load += AddEditUnitForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

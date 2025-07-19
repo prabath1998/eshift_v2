@@ -36,22 +36,24 @@
             pnlHeader.Controls.Add(btnAddNewProduct);
             pnlHeader.Controls.Add(lblTitle);
             pnlHeader.Dock = DockStyle.Top;
-            pnlHeader.Location = new Point(20, 20);
+            pnlHeader.Location = new Point(23, 27);
+            pnlHeader.Margin = new Padding(3, 4, 3, 4);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(960, 50);
+            pnlHeader.Size = new Size(1097, 67);
             pnlHeader.TabIndex = 0;
             // 
             // btnAddNewProduct
             // 
             btnAddNewProduct.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnAddNewProduct.BackColor = Color.FromArgb(65, 84, 241);
+            btnAddNewProduct.BackColor = Color.IndianRed;
             btnAddNewProduct.FlatAppearance.BorderSize = 0;
             btnAddNewProduct.FlatStyle = FlatStyle.Flat;
             btnAddNewProduct.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnAddNewProduct.ForeColor = Color.White;
-            btnAddNewProduct.Location = new Point(800, 5);
+            btnAddNewProduct.Location = new Point(914, 7);
+            btnAddNewProduct.Margin = new Padding(3, 4, 3, 4);
             btnAddNewProduct.Name = "btnAddNewProduct";
-            btnAddNewProduct.Size = new Size(160, 40);
+            btnAddNewProduct.Size = new Size(183, 53);
             btnAddNewProduct.TabIndex = 1;
             btnAddNewProduct.Text = "+ Add New Product";
             btnAddNewProduct.UseVisualStyleBackColor = false;
@@ -60,9 +62,9 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold);
-            lblTitle.Location = new Point(-7, 5);
+            lblTitle.Location = new Point(-8, 7);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(318, 40);
+            lblTitle.Size = new Size(400, 50);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Product Management";
             // 
@@ -73,10 +75,11 @@
             pnlSearch.Controls.Add(txtSearch);
             pnlSearch.Controls.Add(label2);
             pnlSearch.Dock = DockStyle.Top;
-            pnlSearch.Location = new Point(20, 70);
+            pnlSearch.Location = new Point(23, 94);
+            pnlSearch.Margin = new Padding(3, 4, 3, 4);
             pnlSearch.Name = "pnlSearch";
-            pnlSearch.Padding = new Padding(0, 5, 0, 10);
-            pnlSearch.Size = new Size(960, 50);
+            pnlSearch.Padding = new Padding(0, 7, 0, 13);
+            pnlSearch.Size = new Size(1097, 67);
             pnlSearch.TabIndex = 1;
             // 
             // btnSearch
@@ -86,9 +89,10 @@
             btnSearch.FlatStyle = FlatStyle.Flat;
             btnSearch.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(400, 10);
+            btnSearch.Location = new Point(457, 13);
+            btnSearch.Margin = new Padding(3, 4, 3, 4);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(85, 29);
+            btnSearch.Size = new Size(97, 39);
             btnSearch.TabIndex = 2;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
@@ -97,18 +101,19 @@
             // txtSearch
             // 
             txtSearch.Font = new Font("Segoe UI", 12F);
-            txtSearch.Location = new Point(68, 10);
+            txtSearch.Location = new Point(78, 13);
+            txtSearch.Margin = new Padding(3, 4, 3, 4);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(326, 29);
+            txtSearch.Size = new Size(372, 34);
             txtSearch.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(13, 16);
+            label2.Location = new Point(15, 21);
             label2.Name = "label2";
-            label2.Size = new Size(50, 17);
+            label2.Size = new Size(65, 23);
             label2.TabIndex = 0;
             label2.Text = "Search:";
             // 
@@ -127,27 +132,30 @@
             dgvProducts.ColumnHeadersHeight = 35;
             dgvProducts.Dock = DockStyle.Fill;
             dgvProducts.EnableHeadersVisualStyles = false;
-            dgvProducts.Location = new Point(20, 120);
+            dgvProducts.Location = new Point(23, 161);
+            dgvProducts.Margin = new Padding(3, 4, 3, 4);
             dgvProducts.Name = "dgvProducts";
             dgvProducts.ReadOnly = true;
             dgvProducts.RowHeadersVisible = false;
+            dgvProducts.RowHeadersWidth = 51;
             dgvProducts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvProducts.Size = new Size(960, 410);
+            dgvProducts.Size = new Size(1097, 545);
             dgvProducts.TabIndex = 2;
             // 
             // ProductManagementForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 248, 255);
-            ClientSize = new Size(1000, 550);
+            ClientSize = new Size(1143, 733);
             Controls.Add(dgvProducts);
             Controls.Add(pnlSearch);
             Controls.Add(pnlHeader);
             Font = new Font("Segoe UI", 9F);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ProductManagementForm";
-            Padding = new Padding(20);
+            Padding = new Padding(23, 27, 23, 27);
             Text = "ProductManagementForm";
             Load += ProductManagementForm_Load;
             pnlHeader.ResumeLayout(false);

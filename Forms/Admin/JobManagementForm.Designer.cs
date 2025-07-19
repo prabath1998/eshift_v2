@@ -17,199 +17,209 @@
 
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.pnlSearch = new System.Windows.Forms.Panel();
-            this.btnFilter = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
-            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cboStatusFilter = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dgvJobs = new System.Windows.Forms.DataGridView();
-            this.pnlHeader.SuspendLayout();
-            this.pnlSearch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvJobs)).BeginInit();
-            this.SuspendLayout();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            pnlHeader = new Panel();
+            lblTitle = new Label();
+            pnlSearch = new Panel();
+            btnFilter = new Button();
+            label4 = new Label();
+            dtpEndDate = new DateTimePicker();
+            dtpStartDate = new DateTimePicker();
+            label3 = new Label();
+            cboStatusFilter = new ComboBox();
+            label1 = new Label();
+            txtSearch = new TextBox();
+            label2 = new Label();
+            dgvJobs = new DataGridView();
+            pnlHeader.SuspendLayout();
+            pnlSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvJobs).BeginInit();
+            SuspendLayout();
             // 
             // pnlHeader
             // 
-            this.pnlHeader.Controls.Add(this.lblTitle);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(20, 20);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(960, 50);
-            this.pnlHeader.TabIndex = 1;
+            pnlHeader.Controls.Add(lblTitle);
+            pnlHeader.Dock = DockStyle.Top;
+            pnlHeader.Location = new Point(23, 27);
+            pnlHeader.Margin = new Padding(3, 4, 3, 4);
+            pnlHeader.Name = "pnlHeader";
+            pnlHeader.Size = new Size(1097, 67);
+            pnlHeader.TabIndex = 1;
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(-7, 5);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(262, 40);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Job Management";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold);
+            lblTitle.Location = new Point(-8, 7);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(324, 50);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Job Management";
             // 
             // pnlSearch
             // 
-            this.pnlSearch.BackColor = System.Drawing.Color.White;
-            this.pnlSearch.Controls.Add(this.btnFilter);
-            this.pnlSearch.Controls.Add(this.label4);
-            this.pnlSearch.Controls.Add(this.dtpEndDate);
-            this.pnlSearch.Controls.Add(this.dtpStartDate);
-            this.pnlSearch.Controls.Add(this.label3);
-            this.pnlSearch.Controls.Add(this.cboStatusFilter);
-            this.pnlSearch.Controls.Add(this.label1);
-            this.pnlSearch.Controls.Add(this.txtSearch);
-            this.pnlSearch.Controls.Add(this.label2);
-            this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSearch.Location = new System.Drawing.Point(20, 70);
-            this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Padding = new System.Windows.Forms.Padding(0, 5, 0, 10);
-            this.pnlSearch.Size = new System.Drawing.Size(960, 50);
-            this.pnlSearch.TabIndex = 2;
+            pnlSearch.BackColor = Color.White;
+            pnlSearch.Controls.Add(btnFilter);
+            pnlSearch.Controls.Add(label4);
+            pnlSearch.Controls.Add(dtpEndDate);
+            pnlSearch.Controls.Add(dtpStartDate);
+            pnlSearch.Controls.Add(label3);
+            pnlSearch.Controls.Add(cboStatusFilter);
+            pnlSearch.Controls.Add(label1);
+            pnlSearch.Controls.Add(txtSearch);
+            pnlSearch.Controls.Add(label2);
+            pnlSearch.Dock = DockStyle.Top;
+            pnlSearch.Location = new Point(23, 94);
+            pnlSearch.Margin = new Padding(3, 4, 3, 4);
+            pnlSearch.Name = "pnlSearch";
+            pnlSearch.Padding = new Padding(0, 7, 0, 13);
+            pnlSearch.Size = new Size(1097, 67);
+            pnlSearch.TabIndex = 2;
             // 
             // btnFilter
             // 
-            this.btnFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(84)))), ((int)(((byte)(241)))));
-            this.btnFilter.FlatAppearance.BorderSize = 0;
-            this.btnFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFilter.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnFilter.ForeColor = System.Drawing.Color.White;
-            this.btnFilter.Location = new System.Drawing.Point(860, 9);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(85, 30);
-            this.btnFilter.TabIndex = 8;
-            this.btnFilter.Text = "Filter";
-            this.btnFilter.UseVisualStyleBackColor = false;
+            btnFilter.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnFilter.BackColor = Color.IndianRed;
+            btnFilter.FlatAppearance.BorderSize = 0;
+            btnFilter.FlatStyle = FlatStyle.Flat;
+            btnFilter.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            btnFilter.ForeColor = Color.White;
+            btnFilter.Location = new Point(983, 12);
+            btnFilter.Margin = new Padding(3, 4, 3, 4);
+            btnFilter.Name = "btnFilter";
+            btnFilter.Size = new Size(97, 40);
+            btnFilter.TabIndex = 8;
+            btnFilter.Text = "Filter";
+            btnFilter.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(680, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "-";
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Location = new Point(777, 23);
+            label4.Name = "label4";
+            label4.Size = new Size(15, 20);
+            label4.TabIndex = 7;
+            label4.Text = "-";
             // 
             // dtpEndDate
             // 
-            this.dtpEndDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEndDate.Location = new System.Drawing.Point(695, 12);
-            this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(100, 23);
-            this.dtpEndDate.TabIndex = 6;
+            dtpEndDate.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            dtpEndDate.Format = DateTimePickerFormat.Short;
+            dtpEndDate.Location = new Point(794, 16);
+            dtpEndDate.Margin = new Padding(3, 4, 3, 4);
+            dtpEndDate.Name = "dtpEndDate";
+            dtpEndDate.Size = new Size(114, 27);
+            dtpEndDate.TabIndex = 6;
             // 
             // dtpStartDate
             // 
-            this.dtpStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpStartDate.Location = new System.Drawing.Point(577, 12);
-            this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(100, 23);
-            this.dtpStartDate.TabIndex = 5;
+            dtpStartDate.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            dtpStartDate.Format = DateTimePickerFormat.Short;
+            dtpStartDate.Location = new Point(659, 16);
+            dtpStartDate.Margin = new Padding(3, 4, 3, 4);
+            dtpStartDate.Name = "dtpStartDate";
+            dtpStartDate.Size = new Size(114, 27);
+            dtpStartDate.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(535, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Date:";
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(611, 20);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 23);
+            label3.TabIndex = 4;
+            label3.Text = "Date:";
             // 
             // cboStatusFilter
             // 
-            this.cboStatusFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboStatusFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboStatusFilter.FormattingEnabled = true;
-            this.cboStatusFilter.Location = new System.Drawing.Point(380, 12);
-            this.cboStatusFilter.Name = "cboStatusFilter";
-            this.cboStatusFilter.Size = new System.Drawing.Size(140, 23);
-            this.cboStatusFilter.TabIndex = 3;
+            cboStatusFilter.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            cboStatusFilter.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboStatusFilter.FormattingEnabled = true;
+            cboStatusFilter.Location = new Point(434, 16);
+            cboStatusFilter.Margin = new Padding(3, 4, 3, 4);
+            cboStatusFilter.Name = "cboStatusFilter";
+            cboStatusFilter.Size = new Size(159, 28);
+            cboStatusFilter.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(328, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Status:";
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(375, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(60, 23);
+            label1.TabIndex = 2;
+            label1.Text = "Status:";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(68, 12);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(250, 23);
-            this.txtSearch.TabIndex = 1;
+            txtSearch.Location = new Point(78, 16);
+            txtSearch.Margin = new Padding(3, 4, 3, 4);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(285, 27);
+            txtSearch.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Search:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(15, 20);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 23);
+            label2.TabIndex = 0;
+            label2.Text = "Search:";
             // 
             // dgvJobs
             // 
-            this.dgvJobs.AllowUserToAddRows = false;
-            this.dgvJobs.AllowUserToDeleteRows = false;
-            this.dgvJobs.BackgroundColor = System.Drawing.Color.White;
-            this.dgvJobs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvJobs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.dgvJobs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvJobs.ColumnHeadersHeight = 35;
-            this.dgvJobs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvJobs.EnableHeadersVisualStyles = false;
-            this.dgvJobs.Location = new System.Drawing.Point(20, 120);
-            this.dgvJobs.Name = "dgvJobs";
-            this.dgvJobs.ReadOnly = true;
-            this.dgvJobs.RowHeadersVisible = false;
-            this.dgvJobs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvJobs.Size = new System.Drawing.Size(960, 410);
-            this.dgvJobs.TabIndex = 3;
+            dgvJobs.AllowUserToAddRows = false;
+            dgvJobs.AllowUserToDeleteRows = false;
+            dgvJobs.BackgroundColor = Color.White;
+            dgvJobs.BorderStyle = BorderStyle.None;
+            dgvJobs.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(45, 52, 54);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dgvJobs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvJobs.ColumnHeadersHeight = 35;
+            dgvJobs.Dock = DockStyle.Fill;
+            dgvJobs.EnableHeadersVisualStyles = false;
+            dgvJobs.Location = new Point(23, 161);
+            dgvJobs.Margin = new Padding(3, 4, 3, 4);
+            dgvJobs.Name = "dgvJobs";
+            dgvJobs.ReadOnly = true;
+            dgvJobs.RowHeadersVisible = false;
+            dgvJobs.RowHeadersWidth = 51;
+            dgvJobs.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvJobs.Size = new Size(1097, 545);
+            dgvJobs.TabIndex = 3;
             // 
             // JobManagementForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1000, 550);
-            this.Controls.Add(this.dgvJobs);
-            this.Controls.Add(this.pnlSearch);
-            this.Controls.Add(this.pnlHeader);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "JobManagementForm";
-            this.Padding = new System.Windows.Forms.Padding(20);
-            this.Text = "Job Management";
-            this.Load += new System.EventHandler(this.JobManagementForm_Load);
-            this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
-            this.pnlSearch.ResumeLayout(false);
-            this.pnlSearch.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvJobs)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(247, 248, 255);
+            ClientSize = new Size(1143, 733);
+            Controls.Add(dgvJobs);
+            Controls.Add(pnlSearch);
+            Controls.Add(pnlHeader);
+            Font = new Font("Segoe UI", 9F);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "JobManagementForm";
+            Padding = new Padding(23, 27, 23, 27);
+            Text = "Job Management";
+            Load += JobManagementForm_Load;
+            pnlHeader.ResumeLayout(false);
+            pnlHeader.PerformLayout();
+            pnlSearch.ResumeLayout(false);
+            pnlSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvJobs).EndInit();
+            ResumeLayout(false);
         }
         #endregion
 

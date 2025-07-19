@@ -22,6 +22,7 @@
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             lblTitle = new Label();
             tabMain = new TabControl();
             tabPageTrucks = new TabPage();
@@ -85,7 +86,7 @@
             lblTitle.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold);
             lblTitle.Location = new Point(23, 20);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(446, 40);
+            lblTitle.Size = new Size(564, 50);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Vehicle and Asset Management";
             lblTitle.Click += lblTitle_Click;
@@ -110,10 +111,10 @@
             tabPageTrucks.Controls.Add(pnlTruckSearch);
             tabPageTrucks.Controls.Add(pnlTruckHeader);
             tabPageTrucks.Font = new Font("Segoe UI", 9.75F);
-            tabPageTrucks.Location = new Point(4, 29);
+            tabPageTrucks.Location = new Point(4, 34);
             tabPageTrucks.Name = "tabPageTrucks";
             tabPageTrucks.Padding = new Padding(10);
-            tabPageTrucks.Size = new Size(932, 412);
+            tabPageTrucks.Size = new Size(932, 407);
             tabPageTrucks.TabIndex = 0;
             tabPageTrucks.Text = "Truck Management";
             tabPageTrucks.UseVisualStyleBackColor = true;
@@ -138,8 +139,9 @@
             dgvTrucks.Name = "dgvTrucks";
             dgvTrucks.ReadOnly = true;
             dgvTrucks.RowHeadersVisible = false;
+            dgvTrucks.RowHeadersWidth = 51;
             dgvTrucks.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvTrucks.Size = new Size(912, 287);
+            dgvTrucks.Size = new Size(912, 282);
             dgvTrucks.TabIndex = 2;
             // 
             // pnlTruckSearch
@@ -171,7 +173,7 @@
             // 
             txtTruckSearch.Location = new Point(62, 10);
             txtTruckSearch.Name = "txtTruckSearch";
-            txtTruckSearch.Size = new Size(297, 25);
+            txtTruckSearch.Size = new Size(297, 29);
             txtTruckSearch.TabIndex = 1;
             // 
             // label2
@@ -179,7 +181,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(7, 13);
             label2.Name = "label2";
-            label2.Size = new Size(50, 17);
+            label2.Size = new Size(65, 23);
             label2.TabIndex = 0;
             label2.Text = "Search:";
             // 
@@ -196,7 +198,7 @@
             // btnAddNewTruck
             // 
             btnAddNewTruck.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnAddNewTruck.BackColor = Color.FromArgb(65, 84, 241);
+            btnAddNewTruck.BackColor = Color.IndianRed;
             btnAddNewTruck.FlatAppearance.BorderSize = 0;
             btnAddNewTruck.FlatStyle = FlatStyle.Flat;
             btnAddNewTruck.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
@@ -214,7 +216,7 @@
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label1.Location = new Point(3, 16);
             label1.Name = "label1";
-            label1.Size = new Size(147, 25);
+            label1.Size = new Size(186, 32);
             label1.TabIndex = 0;
             label1.Text = "Manage Trucks";
             // 
@@ -224,10 +226,10 @@
             tabPageDrivers.Controls.Add(pnlDriverSearch);
             tabPageDrivers.Controls.Add(pnlDriverHeader);
             tabPageDrivers.Font = new Font("Segoe UI", 9.75F);
-            tabPageDrivers.Location = new Point(4, 29);
+            tabPageDrivers.Location = new Point(4, 34);
             tabPageDrivers.Name = "tabPageDrivers";
             tabPageDrivers.Padding = new Padding(10);
-            tabPageDrivers.Size = new Size(932, 412);
+            tabPageDrivers.Size = new Size(932, 407);
             tabPageDrivers.TabIndex = 1;
             tabPageDrivers.Text = "Driver Management";
             tabPageDrivers.UseVisualStyleBackColor = true;
@@ -251,8 +253,9 @@
             dgvDrivers.Name = "dgvDrivers";
             dgvDrivers.ReadOnly = true;
             dgvDrivers.RowHeadersVisible = false;
+            dgvDrivers.RowHeadersWidth = 51;
             dgvDrivers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDrivers.Size = new Size(912, 287);
+            dgvDrivers.Size = new Size(912, 282);
             dgvDrivers.TabIndex = 2;
             // 
             // pnlDriverSearch
@@ -284,7 +287,7 @@
             // 
             txtDriverSearch.Location = new Point(62, 10);
             txtDriverSearch.Name = "txtDriverSearch";
-            txtDriverSearch.Size = new Size(297, 25);
+            txtDriverSearch.Size = new Size(297, 29);
             txtDriverSearch.TabIndex = 1;
             // 
             // label6
@@ -292,7 +295,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(7, 13);
             label6.Name = "label6";
-            label6.Size = new Size(50, 17);
+            label6.Size = new Size(65, 23);
             label6.TabIndex = 0;
             label6.Text = "Search:";
             // 
@@ -327,7 +330,7 @@
             label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label3.Location = new Point(3, 16);
             label3.Name = "label3";
-            label3.Size = new Size(152, 25);
+            label3.Size = new Size(195, 32);
             label3.TabIndex = 0;
             label3.Text = "Manage Drivers";
             // 
@@ -336,10 +339,10 @@
             tabPageAssistants.Controls.Add(dgvAssistants);
             tabPageAssistants.Controls.Add(pnlAssistantSearch);
             tabPageAssistants.Controls.Add(pnlAssistantHeader);
-            tabPageAssistants.Location = new Point(4, 29);
+            tabPageAssistants.Location = new Point(4, 34);
             tabPageAssistants.Name = "tabPageAssistants";
             tabPageAssistants.Padding = new Padding(10);
-            tabPageAssistants.Size = new Size(932, 412);
+            tabPageAssistants.Size = new Size(932, 407);
             tabPageAssistants.TabIndex = 2;
             tabPageAssistants.Text = "Assistant Management";
             tabPageAssistants.UseVisualStyleBackColor = true;
@@ -371,8 +374,9 @@
             dgvAssistants.Name = "dgvAssistants";
             dgvAssistants.ReadOnly = true;
             dgvAssistants.RowHeadersVisible = false;
+            dgvAssistants.RowHeadersWidth = 51;
             dgvAssistants.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvAssistants.Size = new Size(912, 287);
+            dgvAssistants.Size = new Size(912, 282);
             dgvAssistants.TabIndex = 3;
             // 
             // pnlAssistantSearch
@@ -404,7 +408,7 @@
             // 
             txtAssistantSearch.Location = new Point(62, 10);
             txtAssistantSearch.Name = "txtAssistantSearch";
-            txtAssistantSearch.Size = new Size(297, 27);
+            txtAssistantSearch.Size = new Size(297, 32);
             txtAssistantSearch.TabIndex = 1;
             // 
             // label7
@@ -413,7 +417,7 @@
             label7.Font = new Font("Segoe UI", 9.75F);
             label7.Location = new Point(7, 13);
             label7.Name = "label7";
-            label7.Size = new Size(50, 17);
+            label7.Size = new Size(65, 23);
             label7.TabIndex = 0;
             label7.Text = "Search:";
             // 
@@ -448,7 +452,7 @@
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label4.Location = new Point(3, 16);
             label4.Name = "label4";
-            label4.Size = new Size(175, 25);
+            label4.Size = new Size(227, 32);
             label4.TabIndex = 0;
             label4.Text = "Manage Assistants";
             // 
@@ -457,10 +461,10 @@
             tabPageUnits.Controls.Add(dgvUnits);
             tabPageUnits.Controls.Add(pnlUnitSearch);
             tabPageUnits.Controls.Add(pnlUnitHeader);
-            tabPageUnits.Location = new Point(4, 29);
+            tabPageUnits.Location = new Point(4, 34);
             tabPageUnits.Name = "tabPageUnits";
             tabPageUnits.Padding = new Padding(10);
-            tabPageUnits.Size = new Size(932, 412);
+            tabPageUnits.Size = new Size(932, 407);
             tabPageUnits.TabIndex = 3;
             tabPageUnits.Text = "Transport Units";
             tabPageUnits.UseVisualStyleBackColor = true;
@@ -478,17 +482,24 @@
             dataGridViewCellStyle5.ForeColor = Color.White;
             dgvUnits.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             dgvUnits.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = SystemColors.Window;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            dgvUnits.DefaultCellStyle = dataGridViewCellStyle6;
             dgvUnits.Dock = DockStyle.Fill;
             dgvUnits.EnableHeadersVisualStyles = false;
             dgvUnits.Location = new Point(10, 115);
             dgvUnits.Name = "dgvUnits";
             dgvUnits.ReadOnly = true;
             dgvUnits.RowHeadersVisible = false;
+            dgvUnits.RowHeadersWidth = 51;
             dgvUnits.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUnits.Size = new Size(912, 287);
+            dgvUnits.Size = new Size(912, 282);
             dgvUnits.TabIndex = 4;
-            dgvUnits.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular);
-
             // 
             // pnlUnitSearch
             // 
@@ -519,7 +530,7 @@
             // 
             txtUnitSearch.Location = new Point(62, 10);
             txtUnitSearch.Name = "txtUnitSearch";
-            txtUnitSearch.Size = new Size(297, 27);
+            txtUnitSearch.Size = new Size(297, 32);
             txtUnitSearch.TabIndex = 1;
             // 
             // label8
@@ -528,7 +539,7 @@
             label8.Font = new Font("Segoe UI", 9.75F);
             label8.Location = new Point(7, 13);
             label8.Name = "label8";
-            label8.Size = new Size(50, 17);
+            label8.Size = new Size(65, 23);
             label8.TabIndex = 0;
             label8.Text = "Search:";
             // 
@@ -564,13 +575,13 @@
             label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label5.Location = new Point(3, 16);
             label5.Name = "label5";
-            label5.Size = new Size(228, 25);
+            label5.Size = new Size(290, 32);
             label5.TabIndex = 0;
             label5.Text = "Manage Transport Units";
             // 
             // VehicleManagementForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 248, 255);
             ClientSize = new Size(1000, 550);

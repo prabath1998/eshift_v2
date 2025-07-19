@@ -66,7 +66,7 @@
             // 
             // pnlSidebar
             // 
-            pnlSidebar.BackColor = Color.FromArgb(65, 84, 241);
+            pnlSidebar.BackColor = Color.IndianRed;
             pnlSidebar.Controls.Add(pnlReports);
             pnlSidebar.Controls.Add(pnlProduct);
             pnlSidebar.Controls.Add(pnlVehicle);
@@ -109,7 +109,7 @@
             lblHelp.ForeColor = Color.FromArgb(240, 240, 240);
             lblHelp.Location = new Point(55, 12);
             lblHelp.Name = "lblHelp";
-            lblHelp.Size = new Size(64, 20);
+            lblHelp.Size = new Size(82, 25);
             lblHelp.TabIndex = 0;
             lblHelp.Text = "Reports";
             // 
@@ -141,7 +141,7 @@
             lblPromote.ForeColor = Color.FromArgb(240, 240, 240);
             lblPromote.Location = new Point(55, 12);
             lblPromote.Name = "lblPromote";
-            lblPromote.Size = new Size(141, 17);
+            lblPromote.Size = new Size(184, 23);
             lblPromote.TabIndex = 0;
             lblPromote.Text = "Product Management";
             // 
@@ -173,7 +173,7 @@
             lblIncome.ForeColor = Color.FromArgb(240, 240, 240);
             lblIncome.Location = new Point(55, 12);
             lblIncome.Name = "lblIncome";
-            lblIncome.Size = new Size(137, 17);
+            lblIncome.Size = new Size(177, 23);
             lblIncome.TabIndex = 0;
             lblIncome.Text = "Vehicle Management";
             // 
@@ -205,7 +205,7 @@
             lblCustomers.ForeColor = Color.FromArgb(240, 240, 240);
             lblCustomers.Location = new Point(55, 12);
             lblCustomers.Name = "lblCustomers";
-            lblCustomers.Size = new Size(115, 17);
+            lblCustomers.Size = new Size(150, 23);
             lblCustomers.TabIndex = 0;
             lblCustomers.Text = "Job Management";
             // 
@@ -237,7 +237,7 @@
             lblProduct.ForeColor = Color.FromArgb(240, 240, 240);
             lblProduct.Location = new Point(55, 12);
             lblProduct.Name = "lblProduct";
-            lblProduct.Size = new Size(152, 17);
+            lblProduct.Size = new Size(198, 23);
             lblProduct.TabIndex = 0;
             lblProduct.Text = "Customer Management";
             // 
@@ -269,7 +269,7 @@
             lblDashboard.ForeColor = Color.FromArgb(240, 240, 240);
             lblDashboard.Location = new Point(55, 12);
             lblDashboard.Name = "lblDashboard";
-            lblDashboard.Size = new Size(75, 17);
+            lblDashboard.Size = new Size(97, 23);
             lblDashboard.TabIndex = 0;
             lblDashboard.Text = "Dashboard";
             lblDashboard.Click += lblDashboard_Click;
@@ -293,7 +293,7 @@
             btnLogout.ForeColor = Color.FromArgb(200, 200, 255);
             btnLogout.Location = new Point(60, 32);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(44, 13);
+            btnLogout.Size = new Size(53, 19);
             btnLogout.TabIndex = 2;
             btnLogout.Text = "Logout";
             btnLogout.Click += btnLogout_Click;
@@ -305,7 +305,7 @@
             lblUserName.ForeColor = Color.White;
             lblUserName.Location = new Point(60, 12);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(45, 17);
+            lblUserName.Size = new Size(57, 23);
             lblUserName.TabIndex = 1;
             lblUserName.Text = "Evano";
             // 
@@ -337,7 +337,7 @@
             lblAppName.ForeColor = Color.White;
             lblAppName.Location = new Point(70, 25);
             lblAppName.Name = "lblAppName";
-            lblAppName.Size = new Size(79, 30);
+            lblAppName.Size = new Size(103, 37);
             lblAppName.TabIndex = 1;
             lblAppName.Text = "E-Shift";
             // 
@@ -362,7 +362,7 @@
             // 
             // AdminDashboardForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1184, 680);
             Controls.Add(pnlMainContent);

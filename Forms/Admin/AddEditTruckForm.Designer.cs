@@ -40,7 +40,7 @@
             lblTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             lblTitle.Location = new Point(25, 20);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(164, 30);
+            lblTitle.Size = new Size(211, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Add New Truck";
             // 
@@ -49,7 +49,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(27, 83);
             label1.Name = "label1";
-            label1.Size = new Size(82, 15);
+            label1.Size = new Size(101, 20);
             label1.TabIndex = 1;
             label1.Text = "Truck Number";
             // 
@@ -58,7 +58,7 @@
             txtTruckNumber.Location = new Point(140, 80);
             txtTruckNumber.MaxLength = 100;
             txtTruckNumber.Name = "txtTruckNumber";
-            txtTruckNumber.Size = new Size(230, 23);
+            txtTruckNumber.Size = new Size(230, 27);
             txtTruckNumber.TabIndex = 0;
             // 
             // txtModel
@@ -66,7 +66,7 @@
             txtModel.Location = new Point(140, 115);
             txtModel.MaxLength = 100;
             txtModel.Name = "txtModel";
-            txtModel.Size = new Size(230, 23);
+            txtModel.Size = new Size(230, 27);
             txtModel.TabIndex = 1;
             // 
             // label2
@@ -74,7 +74,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(27, 118);
             label2.Name = "label2";
-            label2.Size = new Size(41, 15);
+            label2.Size = new Size(52, 20);
             label2.TabIndex = 3;
             label2.Text = "Model";
             // 
@@ -83,7 +83,7 @@
             txtLicensePlate.Location = new Point(140, 150);
             txtLicensePlate.MaxLength = 100;
             txtLicensePlate.Name = "txtLicensePlate";
-            txtLicensePlate.Size = new Size(230, 23);
+            txtLicensePlate.Size = new Size(230, 27);
             txtLicensePlate.TabIndex = 2;
             // 
             // label3
@@ -91,7 +91,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(27, 153);
             label3.Name = "label3";
-            label3.Size = new Size(75, 15);
+            label3.Size = new Size(94, 20);
             label3.TabIndex = 5;
             label3.Text = "License Plate";
             // 
@@ -100,7 +100,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(27, 188);
             label4.Name = "label4";
-            label4.Size = new Size(77, 15);
+            label4.Size = new Size(96, 20);
             label4.TabIndex = 7;
             label4.Text = "Capacity (kg)";
             // 
@@ -110,7 +110,7 @@
             numCapacity.Location = new Point(140, 186);
             numCapacity.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             numCapacity.Name = "numCapacity";
-            numCapacity.Size = new Size(230, 23);
+            numCapacity.Size = new Size(230, 27);
             numCapacity.TabIndex = 3;
             // 
             // cboStatus
@@ -119,7 +119,7 @@
             cboStatus.FormattingEnabled = true;
             cboStatus.Location = new Point(140, 221);
             cboStatus.Name = "cboStatus";
-            cboStatus.Size = new Size(230, 23);
+            cboStatus.Size = new Size(230, 28);
             cboStatus.TabIndex = 4;
             // 
             // label5
@@ -127,7 +127,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(27, 224);
             label5.Name = "label5";
-            label5.Size = new Size(39, 15);
+            label5.Size = new Size(49, 20);
             label5.TabIndex = 9;
             label5.Text = "Status";
             // 
@@ -138,14 +138,14 @@
             chkIsActive.CheckState = CheckState.Checked;
             chkIsActive.Location = new Point(140, 260);
             chkIsActive.Name = "chkIsActive";
-            chkIsActive.Size = new Size(70, 19);
+            chkIsActive.Size = new Size(86, 24);
             chkIsActive.TabIndex = 5;
             chkIsActive.Text = "Is Active";
             chkIsActive.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
-            btnSave.BackColor = Color.FromArgb(65, 84, 241);
+            btnSave.BackColor = Color.IndianRed;
             btnSave.FlatAppearance.BorderSize = 0;
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
@@ -174,7 +174,7 @@
             // AddEditTruckForm
             // 
             AcceptButton = btnSave;
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             CancelButton = btnCancel;
