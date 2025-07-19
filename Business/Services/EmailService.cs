@@ -34,6 +34,28 @@ namespace eShift_Logistics_System.Business.Services
             EmailHelper.SendEmail(job.Customer.Email, subject, body);
         }
 
+        public void SendWelcomeEmail(User user)
+        {
+            if (user == null || string.IsNullOrEmpty(user.Email))
+            {
+                Console.WriteLine("Cannot send welcome email: User or Email is missing.");
+                return;
+            }
+           
+            string userName = string.IsNullOrEmpty(user.FirstName) ? "there" : user.FirstName;
+
+            string subject = "Welcome to Our Service!";
+            string body = $"Hi {userName},\n\n" +
+                          "Welcome aboard! We're thrilled to have you join our community.\n\n" +
+                          "You can now explore all the features and benefits we offer.\n\n" +
+                          "If you have any questions, feel free to reach out to our support team.\n\n" +
+                          "Best regards,\n" +
+                          "The [Your Company Name] Team";
+
+            EmailHelper.SendEmail(user.Email, subject, body);
+            Console.WriteLine($"Welcome email sent to {user.Email}");
+        }
+
         /// <summary>
         /// Sends an email to the customer when their job is approved and scheduled for pickup.
         /// </summary>
@@ -218,5 +240,6 @@ namespace eShift_Logistics_System.Business.Services
                 column.Item().PaddingTop(20).Text("Thank you for choosing e-Shift Logistics!").Italic();
             });
         }
+      
     }
 }

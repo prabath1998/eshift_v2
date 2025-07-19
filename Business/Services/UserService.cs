@@ -14,16 +14,18 @@ namespace eShift_Logistics_System.Business.Services
     internal class UserService : IUserService
     {
         private readonly IUserRepository _userService;
+        private readonly IEmailService _emailService;
 
         public UserService(IUserRepository userService)
         {
             _userService = userService;
+            _emailService = new EmailService();
         }
 
         public void AddUser(User user)
         {
             _userService.AddUser(user);
-
+            //_emailService.SendWelcomeEmail(user);
         }
 
         public bool DeleteUser(string customerNumber)

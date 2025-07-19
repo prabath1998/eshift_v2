@@ -15,6 +15,8 @@ namespace eShift_Logistics_System.Business.Interface
         /// <param name="job"></param>
         void SendJobConfirmationEmail(Job job);
 
+        void SendWelcomeEmail(User user);
+
         /// <summary>
         /// 
         /// </summary>
