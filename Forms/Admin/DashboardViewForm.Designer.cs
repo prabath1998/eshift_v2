@@ -392,8 +392,8 @@
             btnCreateUnit.Name = "btnCreateUnit";
             btnCreateUnit.Padding = new Padding(10, 0, 0, 0);
             btnCreateUnit.Size = new Size(190, 50);
-            btnCreateUnit.TabIndex = 0;
-            btnCreateUnit.Text = "     Create Transport Unit";
+            btnCreateUnit.TabIndex = 1;
+            btnCreateUnit.Text = "Create Unit";
             btnCreateUnit.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCreateUnit.UseVisualStyleBackColor = false;
             btnCreateUnit.Click += btnCreateUnit_Click;

@@ -14,8 +14,8 @@ namespace eShift_Logistics_System.Forms.Admin
 
         // Color settings for menu interactions
         private readonly Color _sidebarBackColor = Color.FromArgb(65, 84, 241);
-        private readonly Color _selectedMenuColor = Color.FromArgb(40, 55, 210);
-        private readonly Color _hoverColor = Color.FromArgb(50, 70, 225);
+        private readonly Color _selectedMenuColor = Color.FromArgb(245, 49, 7);
+        private readonly Color _hoverColor = Color.FromArgb(245, 49, 7);
         private readonly Color _unselectedForeColor = Color.FromArgb(240, 240, 240);
         private readonly Color _selectedForeColor = Color.White;
 
