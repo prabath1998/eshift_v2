@@ -249,12 +249,12 @@
             btnSubmitRequest.FlatStyle = FlatStyle.Flat;
             btnSubmitRequest.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnSubmitRequest.ForeColor = Color.White;
-            btnSubmitRequest.Location = new Point(34, 747);
+            btnSubmitRequest.Location = new Point(34, 742);
             btnSubmitRequest.Margin = new Padding(3, 4, 3, 4);
             btnSubmitRequest.Name = "btnSubmitRequest";
             btnSubmitRequest.Size = new Size(777, 67);
             btnSubmitRequest.TabIndex = 4;
-            btnSubmitRequest.Text = "Submit Pickup Request";
+            btnSubmitRequest.Text = " ";
             btnSubmitRequest.UseVisualStyleBackColor = false;
             // 
             // grpNotes
