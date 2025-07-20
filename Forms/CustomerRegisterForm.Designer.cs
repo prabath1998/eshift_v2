@@ -75,9 +75,9 @@ namespace eShift_Logistics_System.Forms
             pnlPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picPasswordIcon).BeginInit();
             SuspendLayout();
-            //
+            // 
             // pnlLeft
-            //
+            // 
             pnlLeft.BackColor = Color.White;
             pnlLeft.Controls.Add(label4);
             pnlLeft.Controls.Add(picIllustration);
@@ -88,22 +88,20 @@ namespace eShift_Logistics_System.Forms
             pnlLeft.Name = "pnlLeft";
             pnlLeft.Size = new Size(450, 700);
             pnlLeft.TabIndex = 1;
-            // Removed pnlLeft_Paint event unless it's doing custom drawing not related to these UI updates
-            // pnlLeft.Paint += pnlLeft_Paint;
-            //
+            // 
             // label4
-            //
+            // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semilight", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0); // Softer font weight
-            label4.ForeColor = Color.FromArgb(100, 100, 100); // Darker grey for better contrast
+            label4.Font = new Font("Segoe UI Semilight", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.FromArgb(100, 100, 100);
             label4.Location = new Point(40, 95);
             label4.Name = "label4";
-            label4.Size = new Size(424, 25);
+            label4.Size = new Size(264, 25);
             label4.TabIndex = 14;
-            label4.Text = "Effortless logistics for household goods transport";
-            //
+            label4.Text = "Your complete logistics partner";
+            // 
             // picIllustration
-            //
+            // 
             picIllustration.Image = (Image)resources.GetObject("picIllustration.Image");
             picIllustration.Location = new Point(40, 155);
             picIllustration.Margin = new Padding(3, 4, 3, 4);
@@ -112,21 +110,21 @@ namespace eShift_Logistics_System.Forms
             picIllustration.SizeMode = PictureBoxSizeMode.Zoom;
             picIllustration.TabIndex = 0;
             picIllustration.TabStop = false;
-            //
+            // 
             // lblAppName
-            //
+            // 
             lblAppName.AutoSize = true;
-            lblAppName.Font = new Font("Segoe UI", 20F, FontStyle.Bold); // Slightly larger
-            lblAppName.ForeColor = Color.FromArgb(220, 53, 69); // A modern, vibrant red
+            lblAppName.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            lblAppName.ForeColor = Color.FromArgb(220, 53, 69);
             lblAppName.Location = new Point(40, 49);
             lblAppName.Name = "lblAppName";
-            lblAppName.Size = new Size(275, 46);
+            lblAppName.Size = new Size(241, 46);
             lblAppName.TabIndex = 1;
-            lblAppName.Text = "E-Shift Household";
-            //
+            lblAppName.Text = "E-Shift Global";
+            // 
             // pnlRight
-            //
-            pnlRight.BackColor = Color.FromArgb(245, 245, 245); // Slightly darker off-white background
+            // 
+            pnlRight.BackColor = Color.FromArgb(245, 245, 245);
             pnlRight.Controls.Add(label7);
             pnlRight.Controls.Add(panel3);
             pnlRight.Controls.Add(label6);
@@ -147,299 +145,284 @@ namespace eShift_Logistics_System.Forms
             pnlRight.Name = "pnlRight";
             pnlRight.Size = new Size(430, 700);
             pnlRight.TabIndex = 0;
-            // Removed pnlRight_Paint unless it's doing custom drawing not related to these UI updates
-            // pnlRight.Paint += pnlRight_Paint;
-            //
+            // 
             // label7
-            //
+            // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Semibold", 9F); // Slightly bolder labels
-            label7.ForeColor = Color.FromArgb(51, 51, 51); // Darker text for labels
-            label7.Location = new Point(49, 463); // Adjusted slightly for better alignment
+            label7.Font = new Font("Segoe UI Semibold", 9F);
+            label7.ForeColor = Color.FromArgb(51, 51, 51);
+            label7.Location = new Point(49, 463);
             label7.Name = "label7";
-            label7.Size = new Size(137, 20);
+            label7.Size = new Size(143, 20);
             label7.TabIndex = 19;
             label7.Text = "Confirm Password *";
-            //
+            // 
             // panel3
-            //
+            // 
             panel3.BackColor = Color.White;
-            panel3.BorderStyle = BorderStyle.None; // Changed to None
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(txtConfirmPassword);
-            panel3.Location = new Point(49, 487); // Adjusted for better spacing
+            panel3.Location = new Point(49, 487);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
             panel3.Size = new Size(320, 55);
             panel3.TabIndex = 18;
-            //panel3.Paint += Panel_RoundedBorder_Paint; // Custom paint for rounded border
-            //
+            // 
             // pictureBox3
-            //
+            // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(12, 14); // Adjusted icon position
+            pictureBox3.Location = new Point(12, 14);
             pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(20, 25); // Slightly smaller icon
+            pictureBox3.Size = new Size(20, 25);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
-            //
+            // 
             // txtConfirmPassword
-            //
+            // 
             txtConfirmPassword.BorderStyle = BorderStyle.None;
-            txtConfirmPassword.Font = new Font("Segoe UI", 11F); // Larger text input font
-            txtConfirmPassword.Location = new Point(45, 16); // Adjusted for icon and padding
+            txtConfirmPassword.Font = new Font("Segoe UI", 11F);
+            txtConfirmPassword.Location = new Point(45, 16);
             txtConfirmPassword.Margin = new Padding(3, 4, 3, 4);
             txtConfirmPassword.MaxLength = 10;
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.PasswordChar = '*';
             txtConfirmPassword.Size = new Size(261, 25);
             txtConfirmPassword.TabIndex = 1;
-            //
+            // 
             // label6
-            //
+            // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F);
             label6.ForeColor = Color.FromArgb(51, 51, 51);
-            label6.Location = new Point(49, 376); // Adjusted
+            label6.Location = new Point(49, 376);
             label6.Name = "label6";
-            label6.Size = new Size(80, 20);
+            label6.Size = new Size(84, 20);
             label6.TabIndex = 17;
             label6.Text = "Password *";
-            //
+            // 
             // panel2
-            //
+            // 
             panel2.BackColor = Color.White;
-            panel2.BorderStyle = BorderStyle.None; // Changed to None
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(txtPassword);
-            panel2.Location = new Point(49, 400); // Adjusted
+            panel2.Location = new Point(49, 400);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
             panel2.Size = new Size(320, 55);
             panel2.TabIndex = 16;
-            //panel2.Paint += Panel_RoundedBorder_Paint; // Custom paint for rounded border
-            // Removed panel2_Paint unless custom painting is handled there.
-            // panel2.Paint += panel2_Paint;
-            //
+            // 
             // pictureBox2
-            //
+            // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 14); // Adjusted icon position
+            pictureBox2.Location = new Point(12, 14);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(20, 25); // Slightly smaller icon
+            pictureBox2.Size = new Size(20, 25);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
-            //
+            // 
             // txtPassword
-            //
+            // 
             txtPassword.BorderStyle = BorderStyle.None;
-            txtPassword.Font = new Font("Segoe UI", 11F); // Larger text input font
-            txtPassword.Location = new Point(45, 16); // Adjusted for icon and padding
+            txtPassword.Font = new Font("Segoe UI", 11F);
+            txtPassword.Location = new Point(45, 16);
             txtPassword.Margin = new Padding(3, 4, 3, 4);
             txtPassword.MaxLength = 10;
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(261, 25);
             txtPassword.TabIndex = 1;
-            //
+            // 
             // label5
-            //
+            // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F);
             label5.ForeColor = Color.FromArgb(51, 51, 51);
-            label5.Location = new Point(49, 287); // Adjusted
+            label5.Location = new Point(49, 287);
             label5.Name = "label5";
-            label5.Size = new Size(118, 20);
+            label5.Size = new Size(125, 20);
             label5.TabIndex = 15;
             label5.Text = "Phone Number *";
-            //
+            // 
             // panel1
-            //
+            // 
             panel1.BackColor = Color.White;
-            panel1.BorderStyle = BorderStyle.None; // Changed to None
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(txtPhoneNumber);
-            panel1.Location = new Point(49, 311); // Adjusted
+            panel1.Location = new Point(49, 311);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
             panel1.Size = new Size(320, 55);
             panel1.TabIndex = 14;
-            //panel1.Paint += Panel_RoundedBorder_Paint; // Custom paint for rounded border
-            //
+            // 
             // pictureBox1
-            //
+            // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 14); // Adjusted icon position
+            pictureBox1.Location = new Point(12, 14);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(20, 25); // Slightly smaller icon
+            pictureBox1.Size = new Size(20, 25);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            //
+            // 
             // txtPhoneNumber
-            //
+            // 
             txtPhoneNumber.BorderStyle = BorderStyle.None;
-            txtPhoneNumber.Font = new Font("Segoe UI", 11F); // Larger text input font
-            txtPhoneNumber.Location = new Point(45, 16); // Adjusted for icon and padding
+            txtPhoneNumber.Font = new Font("Segoe UI", 11F);
+            txtPhoneNumber.Location = new Point(45, 16);
             txtPhoneNumber.Margin = new Padding(3, 4, 3, 4);
             txtPhoneNumber.MaxLength = 12;
             txtPhoneNumber.Name = "txtPhoneNumber";
             txtPhoneNumber.Size = new Size(261, 25);
             txtPhoneNumber.TabIndex = 1;
-            //
+            // 
             // label3
-            //
+            // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0); // Larger, bolder heading
-            label3.ForeColor = Color.FromArgb(51, 51, 51); // Darker grey for primary text
-            label3.Location = new Point(49, 49); // Adjusted for alignment
+            label3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FromArgb(51, 51, 51);
+            label3.Location = new Point(49, 49);
             label3.Name = "label3";
-            label3.Size = new Size(309, 37);
+            label3.Size = new Size(304, 37);
             label3.TabIndex = 13;
-            label3.Text = "Sign up for an account"; // Rephrased for clarity
-            //
+            label3.Text = "Sign up for an account";
+            // 
             // label2
-            //
+            // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F);
             label2.ForeColor = Color.FromArgb(51, 51, 51);
-            label2.Location = new Point(49, 198); // Adjusted
+            label2.Location = new Point(49, 198);
             label2.Name = "label2";
-            label2.Size = new Size(113, 20);
+            label2.Size = new Size(115, 20);
             label2.TabIndex = 12;
             label2.Text = "Email Address *";
-            //
+            // 
             // label1
-            //
+            // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 9F);
             label1.ForeColor = Color.FromArgb(51, 51, 51);
-            label1.Location = new Point(49, 109); // Adjusted
+            label1.Location = new Point(49, 109);
             label1.Name = "label1";
-            label1.Size = new Size(59, 20);
+            label1.Size = new Size(61, 20);
             label1.TabIndex = 11;
             label1.Text = "Name *";
-            //
+            // 
             // pnlEmail
-            //
+            // 
             pnlEmail.BackColor = Color.White;
-            pnlEmail.BorderStyle = BorderStyle.None; // Changed to None
             pnlEmail.Controls.Add(picEmailIcon);
             pnlEmail.Controls.Add(txtFirstName);
-            pnlEmail.Location = new Point(49, 133); // Adjusted for better spacing
+            pnlEmail.Location = new Point(49, 133);
             pnlEmail.Margin = new Padding(3, 4, 3, 4);
             pnlEmail.Name = "pnlEmail";
             pnlEmail.Size = new Size(320, 55);
             pnlEmail.TabIndex = 4;
-            //pnlEmail.Paint += Panel_RoundedBorder_Paint; // Custom paint for rounded border
-            //
+            // 
             // picEmailIcon
-            //
+            // 
             picEmailIcon.ErrorImage = null;
             picEmailIcon.Image = (Image)resources.GetObject("picEmailIcon.Image");
             picEmailIcon.InitialImage = null;
-            picEmailIcon.Location = new Point(12, 14); // Adjusted icon position
+            picEmailIcon.Location = new Point(12, 14);
             picEmailIcon.Margin = new Padding(3, 4, 3, 4);
             picEmailIcon.Name = "picEmailIcon";
-            picEmailIcon.Size = new Size(20, 25); // Slightly smaller icon
+            picEmailIcon.Size = new Size(20, 25);
             picEmailIcon.SizeMode = PictureBoxSizeMode.Zoom;
             picEmailIcon.TabIndex = 0;
             picEmailIcon.TabStop = false;
-            //
+            // 
             // txtFirstName
-            //
+            // 
             txtFirstName.BorderStyle = BorderStyle.None;
-            txtFirstName.Font = new Font("Segoe UI", 11F); // Larger text input font
-            txtFirstName.Location = new Point(45, 16); // Adjusted for icon and padding
+            txtFirstName.Font = new Font("Segoe UI", 11F);
+            txtFirstName.Location = new Point(45, 16);
             txtFirstName.Margin = new Padding(3, 4, 3, 4);
             txtFirstName.MaxLength = 100;
             txtFirstName.Name = "txtFirstName";
             txtFirstName.Size = new Size(261, 25);
             txtFirstName.TabIndex = 1;
-            //
+            // 
             // pnlPassword
-            //
+            // 
             pnlPassword.BackColor = Color.White;
-            pnlPassword.BorderStyle = BorderStyle.None; // Changed to None
             pnlPassword.Controls.Add(picPasswordIcon);
             pnlPassword.Controls.Add(txtEmail);
-            pnlPassword.Location = new Point(49, 222); // Adjusted
+            pnlPassword.Location = new Point(49, 222);
             pnlPassword.Margin = new Padding(3, 4, 3, 4);
             pnlPassword.Name = "pnlPassword";
             pnlPassword.Size = new Size(320, 55);
             pnlPassword.TabIndex = 5;
-            //pnlPassword.Paint += Panel_RoundedBorder_Paint; // Custom paint for rounded border
-            //
+            // 
             // picPasswordIcon
-            //
+            // 
             picPasswordIcon.Image = (Image)resources.GetObject("picPasswordIcon.Image");
-            picPasswordIcon.Location = new Point(12, 14); // Adjusted icon position
+            picPasswordIcon.Location = new Point(12, 14);
             picPasswordIcon.Margin = new Padding(3, 4, 3, 4);
             picPasswordIcon.Name = "picPasswordIcon";
-            picPasswordIcon.Size = new Size(20, 25); // Slightly smaller icon
+            picPasswordIcon.Size = new Size(20, 25);
             picPasswordIcon.SizeMode = PictureBoxSizeMode.Zoom;
             picPasswordIcon.TabIndex = 0;
             picPasswordIcon.TabStop = false;
-            //
+            // 
             // txtEmail
-            //
+            // 
             txtEmail.BorderStyle = BorderStyle.None;
-            txtEmail.Font = new Font("Segoe UI", 11F); // Larger text input font
-            txtEmail.Location = new Point(45, 16); // Adjusted for icon and padding
+            txtEmail.Font = new Font("Segoe UI", 11F);
+            txtEmail.Location = new Point(45, 16);
             txtEmail.Margin = new Padding(3, 4, 3, 4);
             txtEmail.MaxLength = 100;
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(261, 25);
             txtEmail.TabIndex = 1;
-            //
+            // 
             // btnRegister
-            //
-            btnRegister.BackColor = Color.FromArgb(220, 53, 69); // Match accent red
+            // 
+            btnRegister.BackColor = Color.FromArgb(220, 53, 69);
             btnRegister.FlatAppearance.BorderSize = 0;
             btnRegister.FlatStyle = FlatStyle.Flat;
-            btnRegister.Font = new Font("Segoe UI", 13F, FontStyle.Bold); // Slightly larger, bolder
+            btnRegister.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(49, 575); // Adjusted spacing
+            btnRegister.Location = new Point(49, 575);
             btnRegister.Margin = new Padding(3, 4, 3, 4);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(320, 60); // Slightly adjusted height
+            btnRegister.Size = new Size(320, 60);
             btnRegister.TabIndex = 8;
             btnRegister.Text = "Sign Up";
             btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
-            //btnRegister.Paint += Button_RoundedBorder_Paint; // Custom paint for rounded border
-            //
+            // 
             // lblNoAccount
-            //
+            // 
             lblNoAccount.AutoSize = true;
-            lblNoAccount.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0); // Ensure consistent font
-            lblNoAccount.ForeColor = Color.FromArgb(85, 85, 85); // Softer grey
-            lblNoAccount.Location = new Point(90, 650); // Adjusted for centering with link
+            lblNoAccount.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNoAccount.ForeColor = Color.FromArgb(85, 85, 85);
+            lblNoAccount.Location = new Point(90, 650);
             lblNoAccount.Name = "lblNoAccount";
             lblNoAccount.Size = new Size(178, 20);
             lblNoAccount.TabIndex = 9;
             lblNoAccount.Text = "Already have an account?";
-            //
+            // 
             // lnkRegister
-            //
+            // 
             lnkRegister.AutoSize = true;
-            lnkRegister.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0); // Semibold for emphasis
-            lnkRegister.LinkColor = Color.FromArgb(220, 53, 69); // Match accent red
-            lnkRegister.Location = new Point(274, 650); // Adjusted for centering with label
+            lnkRegister.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lnkRegister.LinkColor = Color.FromArgb(220, 53, 69);
+            lnkRegister.Location = new Point(274, 650);
             lnkRegister.Name = "lnkRegister";
-            lnkRegister.Size = new Size(54, 20);
+            lnkRegister.Size = new Size(56, 20);
             lnkRegister.TabIndex = 10;
             lnkRegister.TabStop = true;
             lnkRegister.Text = "Sign In";
             lnkRegister.LinkClicked += lnkRegister_LinkClicked;
-            //
+            // 
             // CustomerRegisterForm
-            //
+            // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(880, 700);
@@ -478,7 +461,7 @@ namespace eShift_Logistics_System.Forms
 
         #endregion Windows Form Designer generated code
 
-       
+
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.PictureBox picIllustration;
         private System.Windows.Forms.Panel pnlRight;

@@ -66,10 +66,10 @@ namespace eShift_Logistics_System.Forms.Admin
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picAppLogo).BeginInit();
             SuspendLayout();
-            //
+            // 
             // pnlSidebar
-            //
-            pnlSidebar.BackColor = Color.FromArgb(220, 53, 69); // Modern vibrant red
+            // 
+            pnlSidebar.BackColor = Color.FromArgb(220, 53, 69);
             pnlSidebar.Controls.Add(pnlReports);
             pnlSidebar.Controls.Add(pnlProduct);
             pnlSidebar.Controls.Add(pnlVehicle);
@@ -83,214 +83,202 @@ namespace eShift_Logistics_System.Forms.Admin
             pnlSidebar.Name = "pnlSidebar";
             pnlSidebar.Size = new Size(311, 853);
             pnlSidebar.TabIndex = 0;
-            //
+            // 
             // pnlReports
-            //
+            // 
             pnlReports.BackColor = Color.Transparent;
             pnlReports.Controls.Add(imgHelp);
             pnlReports.Controls.Add(lblHelp);
             pnlReports.Cursor = Cursors.Hand;
-            pnlReports.Location = new Point(0, 420); // Aligned to left edge of sidebar
+            pnlReports.Location = new Point(0, 420);
             pnlReports.Name = "pnlReports";
-            pnlReports.Size = new Size(311, 50); // Increased height for better spacing
+            pnlReports.Size = new Size(311, 50);
             pnlReports.TabIndex = 6;
-            //pnlReports.MouseEnter += MenuItem_MouseEnter; // Add hover effect
-            //pnlReports.MouseLeave += MenuItem_MouseLeave; // Add hover effect
-            //
+            // 
             // imgHelp
-            //
+            // 
             imgHelp.Image = (Image)resources.GetObject("imgHelp.Image");
-            imgHelp.Location = new Point(25, 13); // Adjusted icon position
+            imgHelp.Location = new Point(25, 13);
             imgHelp.Name = "imgHelp";
             imgHelp.Size = new Size(24, 24);
             imgHelp.SizeMode = PictureBoxSizeMode.Zoom;
             imgHelp.TabIndex = 1;
             imgHelp.TabStop = false;
-            //
+            // 
             // lblHelp
-            //
+            // 
             lblHelp.AutoSize = true;
-            lblHelp.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold); // Slightly larger font
-            lblHelp.ForeColor = Color.White; // Pure white for better contrast
-            lblHelp.Location = new Point(65, 14); // Adjusted text position
+            lblHelp.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
+            lblHelp.ForeColor = Color.White;
+            lblHelp.Location = new Point(65, 14);
             lblHelp.Name = "lblHelp";
-            lblHelp.Size = new Size(74, 25);
+            lblHelp.Size = new Size(79, 25);
             lblHelp.TabIndex = 0;
             lblHelp.Text = "Reports";
-            //
+            // 
             // pnlProduct
-            //
+            // 
             pnlProduct.BackColor = Color.Transparent;
             pnlProduct.Controls.Add(imgPromote);
             pnlProduct.Controls.Add(lblPromote);
             pnlProduct.Cursor = Cursors.Hand;
-            pnlProduct.Location = new Point(0, 360); // Aligned to left edge of sidebar
+            pnlProduct.Location = new Point(0, 360);
             pnlProduct.Name = "pnlProduct";
-            pnlProduct.Size = new Size(311, 50); // Increased height
+            pnlProduct.Size = new Size(311, 50);
             pnlProduct.TabIndex = 5;
-            //pnlProduct.MouseEnter += MenuItem_MouseEnter; // Add hover effect
-            //pnlProduct.MouseLeave += MenuItem_MouseLeave; // Add hover effect
-            //
+            // 
             // imgPromote
-            //
+            // 
             imgPromote.Image = (Image)resources.GetObject("imgPromote.Image");
-            imgPromote.Location = new Point(25, 13); // Adjusted icon position
+            imgPromote.Location = new Point(25, 13);
             imgPromote.Name = "imgPromote";
             imgPromote.Size = new Size(24, 24);
             imgPromote.SizeMode = PictureBoxSizeMode.Zoom;
             imgPromote.TabIndex = 1;
             imgPromote.TabStop = false;
-            //
+            // 
             // lblPromote
-            //
+            // 
             lblPromote.AutoSize = true;
-            lblPromote.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold); // Slightly larger font
-            lblPromote.ForeColor = Color.White; // Pure white
-            lblPromote.Location = new Point(65, 14); // Adjusted text position
+            lblPromote.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
+            lblPromote.ForeColor = Color.White;
+            lblPromote.Location = new Point(65, 14);
             lblPromote.Name = "lblPromote";
-            lblPromote.Size = new Size(184, 25);
+            lblPromote.Size = new Size(197, 25);
             lblPromote.TabIndex = 0;
             lblPromote.Text = "Product Management";
-            //
+            // 
             // pnlVehicle
-            //
+            // 
             pnlVehicle.BackColor = Color.Transparent;
             pnlVehicle.Controls.Add(imgIncome);
             pnlVehicle.Controls.Add(lblIncome);
             pnlVehicle.Cursor = Cursors.Hand;
-            pnlVehicle.Location = new Point(0, 300); // Aligned to left edge of sidebar
+            pnlVehicle.Location = new Point(0, 300);
             pnlVehicle.Name = "pnlVehicle";
-            pnlVehicle.Size = new Size(311, 50); // Increased height
+            pnlVehicle.Size = new Size(311, 50);
             pnlVehicle.TabIndex = 4;
-            //pnlVehicle.MouseEnter += MenuItem_MouseEnter; // Add hover effect
-            //pnlVehicle.MouseLeave += MenuItem_MouseLeave; // Add hover effect
-            //
+            // 
             // imgIncome
-            //
+            // 
             imgIncome.Image = (Image)resources.GetObject("imgIncome.Image");
-            imgIncome.Location = new Point(25, 13); // Adjusted icon position
+            imgIncome.Location = new Point(25, 13);
             imgIncome.Name = "imgIncome";
             imgIncome.Size = new Size(24, 24);
             imgIncome.SizeMode = PictureBoxSizeMode.Zoom;
             imgIncome.TabIndex = 1;
             imgIncome.TabStop = false;
-            //
+            // 
             // lblIncome
-            //
+            // 
             lblIncome.AutoSize = true;
-            lblIncome.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold); // Slightly larger font
-            lblIncome.ForeColor = Color.White; // Pure white
-            lblIncome.Location = new Point(65, 14); // Adjusted text position
+            lblIncome.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
+            lblIncome.ForeColor = Color.White;
+            lblIncome.Location = new Point(65, 14);
             lblIncome.Name = "lblIncome";
-            lblIncome.Size = new Size(177, 25);
+            lblIncome.Size = new Size(191, 25);
             lblIncome.TabIndex = 0;
             lblIncome.Text = "Vehicle Management";
-            //
+            // 
             // pnlJobs
-            //
+            // 
             pnlJobs.BackColor = Color.Transparent;
             pnlJobs.Controls.Add(imgCustomers);
             pnlJobs.Controls.Add(lblCustomers);
             pnlJobs.Cursor = Cursors.Hand;
-            pnlJobs.Location = new Point(0, 240); // Aligned to left edge of sidebar
+            pnlJobs.Location = new Point(0, 240);
             pnlJobs.Name = "pnlJobs";
-            pnlJobs.Size = new Size(311, 50); // Increased height
+            pnlJobs.Size = new Size(311, 50);
             pnlJobs.TabIndex = 3;
-            //pnlJobs.MouseEnter += MenuItem_MouseEnter; // Add hover effect
-            //pnlJobs.MouseLeave += MenuItem_MouseLeave; // Add hover effect
-            //
+            // 
             // imgCustomers
-            //
+            // 
             imgCustomers.Image = (Image)resources.GetObject("imgCustomers.Image");
-            imgCustomers.Location = new Point(25, 13); // Adjusted icon position
+            imgCustomers.Location = new Point(25, 13);
             imgCustomers.Name = "imgCustomers";
             imgCustomers.Size = new Size(24, 24);
             imgCustomers.SizeMode = PictureBoxSizeMode.Zoom;
             imgCustomers.TabIndex = 1;
             imgCustomers.TabStop = false;
-            //
+            // 
             // lblCustomers
-            //
+            // 
             lblCustomers.AutoSize = true;
-            lblCustomers.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold); // Slightly larger font
-            lblCustomers.ForeColor = Color.White; // Pure white
-            lblCustomers.Location = new Point(65, 14); // Adjusted text position
+            lblCustomers.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
+            lblCustomers.ForeColor = Color.White;
+            lblCustomers.Location = new Point(65, 14);
             lblCustomers.Name = "lblCustomers";
-            lblCustomers.Size = new Size(150, 25);
+            lblCustomers.Size = new Size(160, 25);
             lblCustomers.TabIndex = 0;
             lblCustomers.Text = "Job Management";
-            //
+            // 
             // pnlCustomer
-            //
+            // 
             pnlCustomer.BackColor = Color.Transparent;
             pnlCustomer.Controls.Add(imgProduct);
             pnlCustomer.Controls.Add(lblProduct);
             pnlCustomer.Cursor = Cursors.Hand;
-            pnlCustomer.Location = new Point(0, 180); // Aligned to left edge of sidebar
+            pnlCustomer.Location = new Point(0, 180);
             pnlCustomer.Name = "pnlCustomer";
-            pnlCustomer.Size = new Size(311, 50); // Increased height
+            pnlCustomer.Size = new Size(311, 50);
             pnlCustomer.TabIndex = 2;
-            //pnlCustomer.MouseEnter += MenuItem_MouseEnter; // Add hover effect
-            //pnlCustomer.MouseLeave += MenuItem_MouseLeave; // Add hover effect
-            //
+            // 
             // imgProduct
-            //
+            // 
             imgProduct.Image = (Image)resources.GetObject("imgProduct.Image");
-            imgProduct.Location = new Point(25, 13); // Adjusted icon position
+            imgProduct.Location = new Point(25, 13);
             imgProduct.Name = "imgProduct";
             imgProduct.Size = new Size(24, 24);
             imgProduct.SizeMode = PictureBoxSizeMode.Zoom;
             imgProduct.TabIndex = 1;
             imgProduct.TabStop = false;
-            //
+            // 
             // lblProduct
-            //
+            // 
             lblProduct.AutoSize = true;
-            lblProduct.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold); // Slightly larger font
-            lblProduct.ForeColor = Color.White; // Pure white
-            lblProduct.Location = new Point(65, 14); // Adjusted text position
+            lblProduct.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
+            lblProduct.ForeColor = Color.White;
+            lblProduct.Location = new Point(65, 14);
             lblProduct.Name = "lblProduct";
-            lblProduct.Size = new Size(198, 25);
+            lblProduct.Size = new Size(211, 25);
             lblProduct.TabIndex = 0;
             lblProduct.Text = "Customer Management";
-            //
+            // 
             // pnlDashboard
-            //
-            pnlDashboard.BackColor = Color.FromArgb(200, 48, 60); // Slightly darker red for selected/active state
+            // 
+            pnlDashboard.BackColor = Color.FromArgb(200, 48, 60);
             pnlDashboard.Controls.Add(imgDashboard);
             pnlDashboard.Controls.Add(lblDashboard);
             pnlDashboard.Cursor = Cursors.Hand;
-            pnlDashboard.Location = new Point(0, 120); // Aligned to left edge of sidebar
+            pnlDashboard.Location = new Point(0, 120);
             pnlDashboard.Name = "pnlDashboard";
-            pnlDashboard.Size = new Size(311, 50); // Increased height
+            pnlDashboard.Size = new Size(311, 50);
             pnlDashboard.TabIndex = 1;
-            //pnlDashboard.MouseEnter += MenuItem_MouseEnter; // Add hover effect
-            //pnlDashboard.MouseLeave += MenuItem_MouseLeave; // Add hover effect
-            //
+            // 
             // imgDashboard
-            //
+            // 
             imgDashboard.Image = (Image)resources.GetObject("imgDashboard.Image");
-            imgDashboard.Location = new Point(25, 13); // Adjusted icon position
+            imgDashboard.Location = new Point(25, 13);
             imgDashboard.Name = "imgDashboard";
             imgDashboard.Size = new Size(24, 24);
             imgDashboard.SizeMode = PictureBoxSizeMode.Zoom;
             imgDashboard.TabIndex = 1;
             imgDashboard.TabStop = false;
-            //
+            // 
             // lblDashboard
-            //
+            // 
             lblDashboard.AutoSize = true;
-            lblDashboard.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold); // Slightly larger font
-            lblDashboard.ForeColor = Color.White; // Pure white
-            lblDashboard.Location = new Point(65, 14); // Adjusted text position
+            lblDashboard.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
+            lblDashboard.ForeColor = Color.White;
+            lblDashboard.Location = new Point(65, 14);
             lblDashboard.Name = "lblDashboard";
-            lblDashboard.Size = new Size(97, 25);
+            lblDashboard.Size = new Size(104, 25);
             lblDashboard.TabIndex = 0;
             lblDashboard.Text = "Dashboard";
             lblDashboard.Click += lblDashboard_Click;
-            //
+            // 
             // pnlUser
-            //
+            // 
             pnlUser.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pnlUser.BackColor = Color.Transparent;
             pnlUser.Controls.Add(btnLogout);
@@ -298,45 +286,45 @@ namespace eShift_Logistics_System.Forms.Admin
             pnlUser.Controls.Add(picUserAvatar);
             pnlUser.Location = new Point(20, 773);
             pnlUser.Name = "pnlUser";
-            pnlUser.Size = new Size(270, 60); // Slightly wider
+            pnlUser.Size = new Size(270, 60);
             pnlUser.TabIndex = 0;
-            //
+            // 
             // btnLogout
-            //
+            // 
             btnLogout.AutoSize = true;
-            btnLogout.Cursor = Cursors.Hand; // Add hand cursor for clickable label
-            btnLogout.Font = new Font("Segoe UI", 8.5F, FontStyle.Regular, GraphicsUnit.Point, 0); // Slightly larger font
-            btnLogout.ForeColor = Color.FromArgb(240, 240, 240); // Lighter grey for logout link
+            btnLogout.Cursor = Cursors.Hand;
+            btnLogout.Font = new Font("Segoe UI", 8.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogout.ForeColor = Color.FromArgb(240, 240, 240);
             btnLogout.Location = new Point(60, 32);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(57, 20);
+            btnLogout.Size = new Size(56, 20);
             btnLogout.TabIndex = 2;
             btnLogout.Text = "Logout";
             btnLogout.Click += btnLogout_Click;
-            //
+            // 
             // lblUserName
-            //
+            // 
             lblUserName.AutoSize = true;
-            lblUserName.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 0); // Slightly larger font
+            lblUserName.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblUserName.ForeColor = Color.White;
             lblUserName.Location = new Point(60, 12);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(65, 25);
+            lblUserName.Size = new Size(64, 25);
             lblUserName.TabIndex = 1;
             lblUserName.Text = "Evano";
-            //
+            // 
             // picUserAvatar
-            //
+            // 
             picUserAvatar.Image = (Image)resources.GetObject("picUserAvatar.Image");
             picUserAvatar.Location = new Point(10, 10);
             picUserAvatar.Name = "picUserAvatar";
-            picUserAvatar.Size = new Size(38, 38); // Slightly larger avatar
+            picUserAvatar.Size = new Size(38, 38);
             picUserAvatar.SizeMode = PictureBoxSizeMode.Zoom;
             picUserAvatar.TabIndex = 0;
             picUserAvatar.TabStop = false;
-            //
+            // 
             // pnlHeader
-            //
+            // 
             pnlHeader.BackColor = Color.Transparent;
             pnlHeader.Controls.Add(lblAppName);
             pnlHeader.Controls.Add(picAppLogo);
@@ -345,20 +333,20 @@ namespace eShift_Logistics_System.Forms.Admin
             pnlHeader.Name = "pnlHeader";
             pnlHeader.Size = new Size(311, 80);
             pnlHeader.TabIndex = 0;
-            //
+            // 
             // lblAppName
-            //
+            // 
             lblAppName.AutoSize = true;
-            lblAppName.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0); // Larger font
+            lblAppName.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAppName.ForeColor = Color.White;
-            lblAppName.Location = new Point(70, 20); // Adjusted position
+            lblAppName.Location = new Point(70, 20);
             lblAppName.Name = "lblAppName";
-            lblAppName.Size = new Size(119, 41);
+            lblAppName.Size = new Size(115, 41);
             lblAppName.TabIndex = 1;
             lblAppName.Text = "E-Shift";
-            //
+            // 
             // picAppLogo
-            //
+            // 
             picAppLogo.Image = (Image)resources.GetObject("picAppLogo.Image");
             picAppLogo.Location = new Point(25, 20);
             picAppLogo.Name = "picAppLogo";
@@ -366,18 +354,18 @@ namespace eShift_Logistics_System.Forms.Admin
             picAppLogo.SizeMode = PictureBoxSizeMode.Zoom;
             picAppLogo.TabIndex = 0;
             picAppLogo.TabStop = false;
-            //
+            // 
             // pnlMainContent
-            //
-            pnlMainContent.BackColor = Color.FromArgb(247, 248, 255); // Keep light blue-ish white
+            // 
+            pnlMainContent.BackColor = Color.FromArgb(247, 248, 255);
             pnlMainContent.Dock = DockStyle.Fill;
             pnlMainContent.Location = new Point(311, 0);
             pnlMainContent.Name = "pnlMainContent";
             pnlMainContent.Size = new Size(1271, 853);
             pnlMainContent.TabIndex = 1;
-            //
+            // 
             // AdminDashboardForm
-            //
+            // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1582, 853);
