@@ -69,7 +69,7 @@
             grpLocations.Margin = new Padding(3, 4, 3, 4);
             grpLocations.Name = "grpLocations";
             grpLocations.Padding = new Padding(3, 4, 3, 4);
-            grpLocations.Size = new Size(777, 207);
+            grpLocations.Size = new Size(931, 207);
             grpLocations.TabIndex = 0;
             grpLocations.TabStop = false;
             grpLocations.Text = "1. Location and Date";
@@ -101,7 +101,7 @@
             txtDeliveryAddress.Margin = new Padding(3, 4, 3, 4);
             txtDeliveryAddress.Multiline = true;
             txtDeliveryAddress.Name = "txtDeliveryAddress";
-            txtDeliveryAddress.Size = new Size(217, 92);
+            txtDeliveryAddress.Size = new Size(371, 92);
             txtDeliveryAddress.TabIndex = 1;
             // 
             // label2
@@ -147,7 +147,7 @@
             grpProducts.Margin = new Padding(3, 4, 3, 4);
             grpProducts.Name = "grpProducts";
             grpProducts.Padding = new Padding(3, 4, 3, 4);
-            grpProducts.Size = new Size(777, 100);
+            grpProducts.Size = new Size(931, 100);
             grpProducts.TabIndex = 1;
             grpProducts.TabStop = false;
             grpProducts.Text = "2. Add Products to Shipment";
@@ -160,7 +160,7 @@
             btnAddItem.FlatStyle = FlatStyle.Flat;
             btnAddItem.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnAddItem.ForeColor = Color.White;
-            btnAddItem.Location = new Point(629, 40);
+            btnAddItem.Location = new Point(783, 40);
             btnAddItem.Margin = new Padding(3, 4, 3, 4);
             btnAddItem.Name = "btnAddItem";
             btnAddItem.Size = new Size(126, 40);
@@ -219,7 +219,7 @@
             grpShipmentList.Margin = new Padding(3, 4, 3, 4);
             grpShipmentList.Name = "grpShipmentList";
             grpShipmentList.Padding = new Padding(11, 13, 11, 13);
-            grpShipmentList.Size = new Size(777, 187);
+            grpShipmentList.Size = new Size(931, 134);
             grpShipmentList.TabIndex = 2;
             grpShipmentList.TabStop = false;
             grpShipmentList.Text = "3. Shipment Item List";
@@ -238,7 +238,7 @@
             dgvShipmentItems.ReadOnly = true;
             dgvShipmentItems.RowHeadersVisible = false;
             dgvShipmentItems.RowHeadersWidth = 51;
-            dgvShipmentItems.Size = new Size(755, 139);
+            dgvShipmentItems.Size = new Size(909, 86);
             dgvShipmentItems.TabIndex = 0;
             // 
             // btnSubmitRequest
@@ -249,12 +249,12 @@
             btnSubmitRequest.FlatStyle = FlatStyle.Flat;
             btnSubmitRequest.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnSubmitRequest.ForeColor = Color.White;
-            btnSubmitRequest.Location = new Point(34, 742);
+            btnSubmitRequest.Location = new Point(34, 689);
             btnSubmitRequest.Margin = new Padding(3, 4, 3, 4);
             btnSubmitRequest.Name = "btnSubmitRequest";
-            btnSubmitRequest.Size = new Size(777, 67);
+            btnSubmitRequest.Size = new Size(931, 67);
             btnSubmitRequest.TabIndex = 4;
-            btnSubmitRequest.Text = " ";
+            btnSubmitRequest.Text = "Request Pickup";
             btnSubmitRequest.UseVisualStyleBackColor = false;
             // 
             // grpNotes
@@ -262,11 +262,11 @@
             grpNotes.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             grpNotes.Controls.Add(txtNotes);
             grpNotes.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            grpNotes.Location = new Point(34, 627);
+            grpNotes.Location = new Point(34, 574);
             grpNotes.Margin = new Padding(3, 4, 3, 4);
             grpNotes.Name = "grpNotes";
             grpNotes.Padding = new Padding(11, 13, 11, 13);
-            grpNotes.Size = new Size(777, 107);
+            grpNotes.Size = new Size(931, 107);
             grpNotes.TabIndex = 3;
             grpNotes.TabStop = false;
             grpNotes.Text = "4. Additional Notes / Description";
@@ -280,7 +280,7 @@
             txtNotes.Multiline = true;
             txtNotes.Name = "txtNotes";
             txtNotes.ScrollBars = ScrollBars.Vertical;
-            txtNotes.Size = new Size(755, 59);
+            txtNotes.Size = new Size(909, 59);
             txtNotes.TabIndex = 0;
             // 
             // RequestPickupForm
@@ -288,7 +288,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 248, 255);
-            ClientSize = new Size(846, 853);
+            ClientSize = new Size(1000, 800);
             Controls.Add(grpNotes);
             Controls.Add(btnSubmitRequest);
             Controls.Add(grpShipmentList);
