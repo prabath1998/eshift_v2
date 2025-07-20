@@ -25,7 +25,7 @@ namespace eShift_Logistics_System.Business.Services
         public void AddUser(User user)
         {
             _userService.AddUser(user);
-            //_emailService.SendWelcomeEmail(user);
+            _emailService.SendWelcomeEmail(user);
         }
 
         public bool DeleteUser(string customerNumber)

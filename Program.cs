@@ -4,6 +4,7 @@ using eShift_Logistics_System.Forms.Customer;
 using QuestPDF.Infrastructure;
 using System.Globalization;
 using QuestPDF.Infrastructure;
+using eShift_Logistics_System.Helpers;
 
 namespace eShift_Logistics_System
 {
@@ -24,8 +25,11 @@ namespace eShift_Logistics_System
             CultureInfo sriLankanCulture = new CultureInfo("si-LK");
             Thread.CurrentThread.CurrentCulture = sriLankanCulture;
             Thread.CurrentThread.CurrentUICulture = sriLankanCulture;
+            EmailHelper.StartEmailQueueProcessor();
 
             Application.Run(new LoginForm());
+            EmailHelper.StopEmailQueueProcessor();
+
         }
     }
 }
