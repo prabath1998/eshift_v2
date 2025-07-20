@@ -11,12 +11,7 @@ namespace eShift_Logistics_System.Helpers
     public static class DatabaseHelper
     {
         private static readonly string connectionString = "Server=localhost;Database=e_shift_logistics;Uid=root;Pwd=12345678";
-
-        /// <summary>
-        /// Creates and opens a new MySQL database connection using the specified connection string.
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="InvalidOperationException"></exception>
+       
         public static MySqlConnection GetConnection()
         {
             try

@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace eShift_Logistics_System.Models
 {
-    /// <summary>
-    /// Represents a job in the logistics system.
-    /// </summary>
+    
     public class Job
     {
-
         public int Id { get; set; }
 
         public string JobNumber { get; set; } = string.Empty;

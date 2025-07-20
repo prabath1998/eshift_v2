@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace eShift_Logistics_System.Models
 {
-    /// <summary>
-    /// Represents a load in the logistics system, which is part of a job.
-    /// </summary>
+   
     public class Load
     {
         public int Id { get; set; }

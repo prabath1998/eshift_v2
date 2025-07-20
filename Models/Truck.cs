@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace eShift_Logistics_System.Models
 {
-    /// <summary>
-    /// Represents a truck in the logistics system, which can be used for transporting goods.
-    /// </summary>
+    
     public class Truck
     {
         public int Id { get; set; }

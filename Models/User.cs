@@ -6,10 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace eShift_Logistics_System.Models
-{
-    /// <summary>
-    /// Represents a user in the logistics system, which can be a customer, admin
-    /// </summary>
+{   
     public class User
     {
         public int Id { get; set; }

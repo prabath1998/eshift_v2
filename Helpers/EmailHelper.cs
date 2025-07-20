@@ -27,36 +27,25 @@ namespace eShift_Logistics_System.Helpers
     }
 
     public static class EmailHelper
-    {
-        /// <summary>
-        /// SMTP configuration for sending emails.
-        /// NOTE: For production, store these in a more secure configuration
-        /// like App.config, environment variables, or a secrets manager.
-        /// </summary>
+    {       
         private static readonly string emailAddress = "a3748c7f61b26f";
         private static readonly string emailPassword = "f6b67a1e719146";
         private static readonly string smtpHost = "smtp.mailtrap.io";
-        private static readonly int smtpPort = 587; // Common SMTP port for TLS/STARTTLS
+        private static readonly int smtpPort = 587;
 
-        // --- Email Queue Members ---
         private static ConcurrentQueue<EmailMessage> _emailQueue = new ConcurrentQueue<EmailMessage>();
         private static CancellationTokenSource _cancellationTokenSource;
         private static Task _emailProcessorTask;
         private static bool _isProcessing = false;
-        private static readonly object _processingLock = new object(); // To prevent multiple concurrent processors
+        private static readonly object _processingLock = new object();
 
-        /// <summary>
-        /// Starts the background task that processes the email queue.
-        /// Call this once when your application starts (e.g., in Program.cs).
-        /// </summary>
         public static void StartEmailQueueProcessor()
         {
             lock (_processingLock)
             {
-                if (_isProcessing) return; // Already running
+                if (_isProcessing) return;
 
                 _cancellationTokenSource = new CancellationTokenSource();
-                // Task.Run is used to run the async method in a background thread.
                 _emailProcessorTask = Task.Run(async () => await ProcessEmailQueueLoop(_cancellationTokenSource.Token));
                 _isProcessing = true;
                 Console.WriteLine("Email queue processor started.");
