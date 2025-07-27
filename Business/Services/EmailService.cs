@@ -44,13 +44,13 @@ namespace eShift_Logistics_System.Business.Services
            
             string userName = string.IsNullOrEmpty(user.FirstName) ? "there" : user.FirstName;
 
-            string subject = "Welcome to Our Service!";
+            string subject = "Welcome to e-Shift Global!";
             string body = $"Hi {userName},\n\n" +
-                          "Welcome aboard! We're thrilled to have you join our community.\n\n" +
-                          "You can now explore all the features and benefits we offer.\n\n" +
-                          "If you have any questions, feel free to reach out to our support team.\n\n" +
+                          "Welcome to e-Shift Global! We're excited to have you on board for all your household shifting needs.\n\n" +
+                          "You can now easily manage your transport jobs, track loads, and more through our system.\n\n" +
+                          "If you have any questions, our support team is ready to assist you.\n\n" +
                           "Best regards,\n" +
-                          "The [Your Company Name] Team";
+                          "The e-Shift Global Team";
 
             EmailHelper.SendEmail(user.Email, subject, body);
             Console.WriteLine($"Welcome email sent to {user.Email}");

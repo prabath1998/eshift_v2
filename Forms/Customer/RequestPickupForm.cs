@@ -100,7 +100,8 @@ namespace eShift_Logistics_System.Forms.Customer
         private void RefreshShipmentGrid()
         {
             dgvShipmentItems.DataSource = null;
-            var displayList = _shipmentItems.Select(item => new {
+            var displayList = _shipmentItems.Select(item => new
+            {
                 item.ProductId,
                 ProductName = item.Product.Name,
                 item.Quantity
@@ -162,6 +163,16 @@ namespace eShift_Logistics_System.Forms.Customer
             {
                 MessageBox.Show($"There was an error submitting your request: {ex.Message}", "Submission Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void grpNotes_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpNotes_Enter_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -5,6 +5,7 @@ using QuestPDF.Infrastructure;
 using System.Globalization;
 using QuestPDF.Infrastructure;
 using eShift_Logistics_System.Helpers;
+using DotNetEnv;
 
 namespace eShift_Logistics_System
 {
@@ -18,7 +19,9 @@ namespace eShift_Logistics_System
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+            Env.Load();
             ApplicationConfiguration.Initialize();
+
 
             QuestPDF.Settings.License = LicenseType.Community;
 

@@ -1,4 +1,7 @@
-﻿namespace eShift_Logistics_System.Forms.Customer
+﻿using System.Drawing; // Ensure this is present for Color
+using eShift_Logistics_System.Properties; // Assuming this is still needed for resources
+
+namespace eShift_Logistics_System.Forms.Customer
 {
     partial class CustomerDashboardForm
     {
@@ -53,10 +56,10 @@
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picAppLogo).BeginInit();
             SuspendLayout();
-            // 
+            //
             // pnlSidebar
-            // 
-            pnlSidebar.BackColor = Color.IndianRed;
+            //
+            pnlSidebar.BackColor = Color.FromArgb(220, 53, 69); // Modern vibrant red
             pnlSidebar.Controls.Add(pnlMyProfile);
             pnlSidebar.Controls.Add(pnlRequestPickup);
             pnlSidebar.Controls.Add(pnlMyJobs);
@@ -67,184 +70,184 @@
             pnlSidebar.Location = new Point(0, 0);
             pnlSidebar.Margin = new Padding(3, 4, 3, 4);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(297, 800);
+            pnlSidebar.Size = new Size(297, 719);
             pnlSidebar.TabIndex = 0;
-            // 
+            //
             // pnlMyProfile
-            // 
+            //
             pnlMyProfile.BackColor = Color.Transparent;
             pnlMyProfile.Controls.Add(picMyProfile);
             pnlMyProfile.Controls.Add(lblMyProfile);
             pnlMyProfile.Cursor = Cursors.Hand;
-            pnlMyProfile.Location = new Point(23, 320);
+            pnlMyProfile.Location = new Point(0, 320); // Aligned to left edge of sidebar
             pnlMyProfile.Margin = new Padding(3, 4, 3, 4);
             pnlMyProfile.Name = "pnlMyProfile";
-            pnlMyProfile.Size = new Size(251, 60);
+            pnlMyProfile.Size = new Size(297, 60); // Full width of sidebar
             pnlMyProfile.TabIndex = 4;
-            // 
+            //
             // picMyProfile
-            // 
+            //
             picMyProfile.Image = (Image)resources.GetObject("picMyProfile.Image");
-            picMyProfile.Location = new Point(17, 13);
+            picMyProfile.Location = new Point(25, 13); // Adjusted icon position
             picMyProfile.Margin = new Padding(3, 4, 3, 4);
             picMyProfile.Name = "picMyProfile";
             picMyProfile.Size = new Size(27, 32);
             picMyProfile.SizeMode = PictureBoxSizeMode.Zoom;
             picMyProfile.TabIndex = 1;
             picMyProfile.TabStop = false;
-            // 
+            //
             // lblMyProfile
-            // 
+            //
             lblMyProfile.AutoSize = true;
-            lblMyProfile.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            lblMyProfile.ForeColor = Color.FromArgb(240, 240, 240);
-            lblMyProfile.Location = new Point(63, 16);
+            lblMyProfile.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold); // Consistent font
+            lblMyProfile.ForeColor = Color.White; // Pure white for contrast
+            lblMyProfile.Location = new Point(65, 16); // Adjusted text position
             lblMyProfile.Name = "lblMyProfile";
             lblMyProfile.Size = new Size(104, 25);
             lblMyProfile.TabIndex = 0;
             lblMyProfile.Text = "My Profile";
-            // 
+            //
             // pnlRequestPickup
-            // 
-            pnlRequestPickup.BackColor = Color.FromArgb(255, 107, 107);
+            //
+            pnlRequestPickup.BackColor = Color.Transparent; // Default to transparent
             pnlRequestPickup.Controls.Add(picRequestPickup);
             pnlRequestPickup.Controls.Add(lblRequestPickup);
             pnlRequestPickup.Cursor = Cursors.Hand;
-            pnlRequestPickup.Location = new Point(23, 400);
+            pnlRequestPickup.Location = new Point(0, 400); // Aligned to left edge of sidebar
             pnlRequestPickup.Margin = new Padding(3, 4, 3, 4);
             pnlRequestPickup.Name = "pnlRequestPickup";
-            pnlRequestPickup.Size = new Size(251, 60);
+            pnlRequestPickup.Size = new Size(297, 60); // Full width of sidebar
             pnlRequestPickup.TabIndex = 3;
-            // 
+            //
             // picRequestPickup
-            // 
+            //
             picRequestPickup.Image = (Image)resources.GetObject("picRequestPickup.Image");
-            picRequestPickup.Location = new Point(17, 13);
+            picRequestPickup.Location = new Point(25, 13); // Adjusted icon position
             picRequestPickup.Margin = new Padding(3, 4, 3, 4);
             picRequestPickup.Name = "picRequestPickup";
             picRequestPickup.Size = new Size(27, 32);
             picRequestPickup.SizeMode = PictureBoxSizeMode.Zoom;
             picRequestPickup.TabIndex = 1;
             picRequestPickup.TabStop = false;
-            // 
+            //
             // lblRequestPickup
-            // 
+            //
             lblRequestPickup.AutoSize = true;
-            lblRequestPickup.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            lblRequestPickup.ForeColor = Color.White;
-            lblRequestPickup.Location = new Point(63, 16);
+            lblRequestPickup.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold); // Consistent font
+            lblRequestPickup.ForeColor = Color.White; // Pure white
+            lblRequestPickup.Location = new Point(65, 16); // Adjusted text position
             lblRequestPickup.Name = "lblRequestPickup";
             lblRequestPickup.Size = new Size(149, 25);
             lblRequestPickup.TabIndex = 0;
             lblRequestPickup.Text = "Request Pickup";
-            // 
+            //
             // pnlMyJobs
-            // 
+            //
             pnlMyJobs.BackColor = Color.Transparent;
             pnlMyJobs.Controls.Add(picMyJobs);
             pnlMyJobs.Controls.Add(lblMyJobs);
             pnlMyJobs.Cursor = Cursors.Hand;
-            pnlMyJobs.Location = new Point(23, 240);
+            pnlMyJobs.Location = new Point(0, 240); // Aligned to left edge of sidebar
             pnlMyJobs.Margin = new Padding(3, 4, 3, 4);
             pnlMyJobs.Name = "pnlMyJobs";
-            pnlMyJobs.Size = new Size(251, 60);
+            pnlMyJobs.Size = new Size(297, 60); // Full width of sidebar
             pnlMyJobs.TabIndex = 2;
-            // 
+            //
             // picMyJobs
-            // 
+            //
             picMyJobs.Image = (Image)resources.GetObject("picMyJobs.Image");
-            picMyJobs.Location = new Point(17, 13);
+            picMyJobs.Location = new Point(25, 13); // Adjusted icon position
             picMyJobs.Margin = new Padding(3, 4, 3, 4);
             picMyJobs.Name = "picMyJobs";
             picMyJobs.Size = new Size(27, 32);
             picMyJobs.SizeMode = PictureBoxSizeMode.Zoom;
             picMyJobs.TabIndex = 1;
             picMyJobs.TabStop = false;
-            // 
+            //
             // lblMyJobs
-            // 
+            //
             lblMyJobs.AutoSize = true;
-            lblMyJobs.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            lblMyJobs.ForeColor = Color.FromArgb(240, 240, 240);
-            lblMyJobs.Location = new Point(63, 16);
+            lblMyJobs.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold); // Consistent font
+            lblMyJobs.ForeColor = Color.White; // Pure white
+            lblMyJobs.Location = new Point(65, 16); // Adjusted text position
             lblMyJobs.Name = "lblMyJobs";
             lblMyJobs.Size = new Size(85, 25);
             lblMyJobs.TabIndex = 0;
             lblMyJobs.Text = "My Jobs";
-            // 
+            //
             // pnlDashboard
-            // 
-            pnlDashboard.BackColor = Color.Transparent;
+            //
+            pnlDashboard.BackColor = Color.FromArgb(200, 48, 60); // Slightly darker red for selected/active state
             pnlDashboard.Controls.Add(picDashboard);
             pnlDashboard.Controls.Add(lblDashboard);
             pnlDashboard.Cursor = Cursors.Hand;
-            pnlDashboard.Location = new Point(23, 160);
+            pnlDashboard.Location = new Point(0, 160); // Aligned to left edge of sidebar
             pnlDashboard.Margin = new Padding(3, 4, 3, 4);
             pnlDashboard.Name = "pnlDashboard";
-            pnlDashboard.Size = new Size(251, 60);
+            pnlDashboard.Size = new Size(297, 60); // Full width of sidebar
             pnlDashboard.TabIndex = 1;
-            // 
+            //
             // picDashboard
-            // 
+            //
             picDashboard.Image = (Image)resources.GetObject("picDashboard.Image");
-            picDashboard.Location = new Point(17, 13);
+            picDashboard.Location = new Point(25, 13); // Adjusted icon position
             picDashboard.Margin = new Padding(3, 4, 3, 4);
             picDashboard.Name = "picDashboard";
             picDashboard.Size = new Size(27, 32);
             picDashboard.SizeMode = PictureBoxSizeMode.Zoom;
             picDashboard.TabIndex = 1;
             picDashboard.TabStop = false;
-            // 
+            //
             // lblDashboard
-            // 
+            //
             lblDashboard.AutoSize = true;
-            lblDashboard.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            lblDashboard.ForeColor = Color.FromArgb(240, 240, 240);
-            lblDashboard.Location = new Point(63, 16);
+            lblDashboard.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold); // Consistent font
+            lblDashboard.ForeColor = Color.White; // Pure white
+            lblDashboard.Location = new Point(65, 16); // Adjusted text position
             lblDashboard.Name = "lblDashboard";
             lblDashboard.Size = new Size(109, 25);
             lblDashboard.TabIndex = 0;
             lblDashboard.Text = "Dashboard";
-            // 
+            //
             // pnlUser
-            // 
+            //
             pnlUser.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pnlUser.BackColor = Color.Transparent;
             pnlUser.Controls.Add(btnLogout);
             pnlUser.Controls.Add(lblUserName);
             pnlUser.Controls.Add(picUserAvatar);
-            pnlUser.Location = new Point(23, 693);
+            pnlUser.Location = new Point(23, 612);
             pnlUser.Margin = new Padding(3, 4, 3, 4);
             pnlUser.Name = "pnlUser";
-            pnlUser.Size = new Size(251, 80);
+            pnlUser.Size = new Size(251, 80); // Adjusted size
             pnlUser.TabIndex = 0;
-            // 
+            //
             // btnLogout
-            // 
+            //
             btnLogout.AutoSize = true;
             btnLogout.Cursor = Cursors.Hand;
-            btnLogout.Font = new Font("Segoe UI", 8.25F);
-            btnLogout.ForeColor = Color.FromArgb(200, 200, 255);
+            btnLogout.Font = new Font("Segoe UI", 8.5F); // Consistent font
+            btnLogout.ForeColor = Color.FromArgb(240, 240, 240); // Lighter grey for logout link
             btnLogout.Location = new Point(69, 43);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(53, 19);
+            btnLogout.Size = new Size(57, 20); // Adjusted size
             btnLogout.TabIndex = 2;
             btnLogout.Text = "Logout";
             btnLogout.Click += btnLogout_Click;
-            // 
+            //
             // lblUserName
-            // 
+            //
             lblUserName.AutoSize = true;
-            lblUserName.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            lblUserName.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold); // Consistent font
             lblUserName.ForeColor = Color.White;
             lblUserName.Location = new Point(69, 16);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(139, 23);
+            lblUserName.Size = new Size(139, 25); // Adjusted size
             lblUserName.TabIndex = 1;
             lblUserName.Text = "Customer Name";
-            // 
+            //
             // picUserAvatar
-            // 
+            //
             picUserAvatar.Image = (Image)resources.GetObject("picUserAvatar.Image");
             picUserAvatar.Location = new Point(11, 13);
             picUserAvatar.Margin = new Padding(3, 4, 3, 4);
@@ -253,9 +256,9 @@
             picUserAvatar.SizeMode = PictureBoxSizeMode.Zoom;
             picUserAvatar.TabIndex = 0;
             picUserAvatar.TabStop = false;
-            // 
+            //
             // pnlHeader
-            // 
+            //
             pnlHeader.BackColor = Color.Transparent;
             pnlHeader.Controls.Add(lblAppName);
             pnlHeader.Controls.Add(picAppLogo);
@@ -265,20 +268,20 @@
             pnlHeader.Name = "pnlHeader";
             pnlHeader.Size = new Size(297, 107);
             pnlHeader.TabIndex = 0;
-            // 
+            //
             // lblAppName
-            // 
+            //
             lblAppName.AutoSize = true;
-            lblAppName.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
+            lblAppName.Font = new Font("Segoe UI", 18F, FontStyle.Bold); // Larger font
             lblAppName.ForeColor = Color.White;
             lblAppName.Location = new Point(80, 33);
             lblAppName.Name = "lblAppName";
-            lblAppName.Size = new Size(103, 37);
+            lblAppName.Size = new Size(119, 41); // Adjusted size
             lblAppName.TabIndex = 1;
             lblAppName.Text = "E-Shift";
-            // 
+            //
             // picAppLogo
-            // 
+            //
             picAppLogo.Image = (Image)resources.GetObject("picAppLogo.Image");
             picAppLogo.Location = new Point(29, 27);
             picAppLogo.Margin = new Padding(3, 4, 3, 4);
@@ -287,22 +290,22 @@
             picAppLogo.SizeMode = PictureBoxSizeMode.Zoom;
             picAppLogo.TabIndex = 0;
             picAppLogo.TabStop = false;
-            // 
+            //
             // pnlMainContent
-            // 
-            pnlMainContent.BackColor = Color.FromArgb(247, 248, 255);
+            //
+            pnlMainContent.BackColor = Color.FromArgb(247, 248, 255); // Consistent light background
             pnlMainContent.Dock = DockStyle.Fill;
             pnlMainContent.Location = new Point(297, 0);
             pnlMainContent.Margin = new Padding(3, 4, 3, 4);
             pnlMainContent.Name = "pnlMainContent";
-            pnlMainContent.Size = new Size(846, 800);
+            pnlMainContent.Size = new Size(1075, 719);
             pnlMainContent.TabIndex = 1;
-            // 
+            //
             // CustomerDashboardForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            //
+            AutoScaleDimensions = new SizeF(8F, 20F); // Consistent font scaling
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 800);
+            ClientSize = new Size(1372, 719);
             Controls.Add(pnlMainContent);
             Controls.Add(pnlSidebar);
             Font = new Font("Segoe UI", 9F);

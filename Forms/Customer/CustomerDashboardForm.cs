@@ -24,8 +24,9 @@ namespace eShift_Logistics_System.Forms.Customer
         private readonly int _customerId;
 
         // Colors for menu interaction
-        private readonly Color _selectedMenuColor = Color.FromArgb(40, 55, 210);
-        private readonly Color _hoverColor = Color.FromArgb(50, 70, 225);
+        private readonly Color _selectedMenuColor = Color.FromArgb(245, 49, 7);
+        private readonly Color _hoverColor = Color.FromArgb(245, 49, 7);
+
 
         private readonly IUserService _userService;
 
